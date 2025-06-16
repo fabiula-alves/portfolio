@@ -76,7 +76,9 @@ a.navbar-brand {
 /*Image Gallery Style*/
 .da-gallery .card-columns .card {
   border: none;
-  border-radius: none; }
+  border-radius: none; 
+  
+}
 
 @media (max-width: 992px) {
   .da-gallery .card-columns {
