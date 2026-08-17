@@ -1,240 +1,4302 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fabiula Alves</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/ekko-lightbox.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
-  </head>
-  <body id="top">
-    <header class="d-flex flex-column">
-      <div class="container pt-4">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand" href="#">Portfólio</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Experiência</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Projetos</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="da-home-page-text flex-grow-1 d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000">
-        <div class="container">
-          <div class="col-md-10 col-sm-12 px-0 mx-0">
-            <h2 class="display-3 text-uppercase">Fabiula Alves</h2>
-            <h3 class="h4 mt-3">Design Gráfico e Marketing</h3><a class="smooth-scroll btn btn-outline-light mt-4" href="#projects">Saiba Mais</a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="page-content">
-      <div>
+<html lang="pt-BR">
 
-<div class="da-projects" id="projects">
-  <div class="row mx-0">
-    <div class="col-md-6 pl-5 pt-5 pb-3">
-      <div class="row mb-3">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <title>Fabiula Alves — Portfólio</title>
+
+
+  <!-- =====================================================
+       FONTES
+  ====================================================== -->
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="crossorigin"/>
+
+  <link rel="preload"
+        as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"/>
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+        media="print"
+        onload="this.media='all'"/>
+
+  <noscript>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"/>
+
+  </noscript>
+
+
+  <!-- =====================================================
+       CSS
+  ====================================================== -->
+
+  <link href="css/bootstrap.min.css?ver=1.2.0"
+        rel="stylesheet">
+
+  <link href="css/font-awesome/css/all.min.css?ver=1.2.0"
+        rel="stylesheet">
+
+  <link href="css/aos.css?ver=1.2.0"
+        rel="stylesheet">
+
+  <link href="css/ekko-lightbox.css?ver=1.2.0"
+        rel="stylesheet">
+
+  <link href="css/main.css?ver=1.2.0"
+        rel="stylesheet">
+
+
+  <style>
+
+    /* =====================================================
+       VÍDEOS DOS CASES
+    ====================================================== */
+
+    .case-video-column {
+      flex: 0 0 40%;
+      max-width: 40%;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .case-text-column {
+      flex: 0 0 60%;
+      max-width: 60%;
+      margin: 0;
+    }
+
+    .portfolio-video-area {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ebebea;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden;
+    }
+
+    .portfolio-video {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      margin: 0 auto !important;
+      padding: 0;
+      background-color: #f5f5f5;
+      border: 0;
+      outline: none;
+      object-fit: contain;
+    }
+
+    .case-video-column,
+    .portfolio-video-area,
+    .portfolio-video {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    .portfolio-video::-webkit-media-controls-panel {
+      background-color: rgba(0,0,0,0.35);
+    }
+
+    /* =====================================================
+       GALERIA
+    ====================================================== */
+
+    .portfolio-gallery {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .portfolio-gallery .card {
+      border: 0;
+      border-radius: 0;
+      overflow: hidden;
+      background: transparent;
+      margin-bottom: 25px;
+    }
+
+    .portfolio-gallery .card a {
+      display: block;
+      overflow: hidden;
+    }
+
+    .portfolio-gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.4s ease;
+    }
+
+    .portfolio-gallery .card:hover img {
+      transform: scale(1.03);
+    }
+
+    /* =====================================================
+       DESCRIÇÃO E SEÇÕES DO PROJETO
+    ====================================================== */
+
+    .project-description {
+      font-size: 13px;
+      line-height: 1.8;
+      color: #777;
+      text-transform: none;
+      margin-bottom: 25px;
+    }
+
+    .project-label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .project-section {
+      margin-top: 30px;
+      padding-top: 22px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .project-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    .project-section-text {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #777;
+      text-transform: none;
+      margin-bottom: 0;
+    }
+
+    /* =====================================================
+       CARDS
+    ====================================================== */
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .tech-card {
+      padding: 18px 10px;
+      background: #f5f5f5;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .tech-card strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .tech-card span {
+      display: block;
+      font-size: 10px;
+      color: #777;
+      line-height: 1.5;
+      text-transform: none;
+    }
+
+    .tech-card:hover {
+      transform: translateY(-5px);
+      background: #222;
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .tech-card:hover span {
+      color: #ccc;
+    }
+
+    /* =====================================================
+       PALETA DE CORES E AMOSTRAS
+    ====================================================== */
+
+    .color-swatch-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .color-swatch {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      position: relative;
+      transition: transform 0.2s ease;
+    }
+
+    .color-swatch:hover {
+      transform: translateY(-2px);
+    }
+
+    /* =====================================================
+       GALERIA DE IMAGENS DE IA (4 NA MESMA LINHA)
+    ====================================================== */
+
+    .ai-image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .ai-image-item {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      padding: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .ai-image-thumb {
+      width: 100%;
+      height: 110px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .ai-image-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .ai-image-thumb:hover img {
+      transform: scale(1.05);
+    }
+
+    .btn-view-prompt {
+      font-size: 9px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: 4px 6px;
+      width: 100%;
+    }
+
+    .prompt-box {
+      background: #f8f9fa;
+      border-left: 3px solid #169d99;
+      border-radius: 4px;
+      padding: 8px;
+      margin-top: 8px;
+      font-size: 9px;
+      line-height: 1.4;
+      color: #444;
+    }
+
+    .prompt-box code {
+      display: block;
+      white-space: pre-wrap;
+      font-family: inherit;
+      color: #555;
+      background: transparent;
+      padding: 0;
+    }
+
+    /* =====================================================
+       RESPONSIVIDADE
+    ====================================================== */
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    video {
+      max-width: 100%;
+    }
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media (max-width: 991px) {
+      .case-video-column {
+        flex: 0 0 42%;
+        max-width: 42%;
+      }
+      .case-text-column {
+        flex: 0 0 58%;
+        max-width: 58%;
+      }
+      .portfolio-video {
+        max-width: 300px;
+      }
+      .ai-image-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .case-video-column,
+      .case-text-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .portfolio-video {
+        width: 100%;
+        max-width: 350px;
+      }
+      .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .portfolio-video {
+        width: 100%;
+        max-width: 100%;
+      }
+      .tech-grid {
+        grid-template-columns: 1fr;
+      }
+      .ai-image-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+
+  <noscript>
+
+    <style type="text/css">
+
+      [data-aos] {
+
+        opacity: 1 !important;
+
+        transform: translate(0) scale(1) !important;
+
+      }
+
+    </style>
+
+  </noscript>
+
+</head>
+
+
+<body id="top">
+
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<header class="d-flex flex-column">
+
+  <div class="container pt-4">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0">
+
+      <a class="text-white navbar-brand" href="#">
+        Portfólio
+      </a>
+
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#da-navbarNav"
+              aria-controls="da-navbarNav"
+              aria-expanded="false"
+              aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link smooth-scroll" href="#projects">
+              Experiência
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth-scroll" href="#gallery">
+              Projetos
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="row mb-3">
-        <div class="col-1 da-project-icon"><i class="text-success far fa-chart-bar fa-2x fa-fw"></i></div>
-        <div class="col-10">
-          <div class="h4">Designer</div>
-          <p>Sites, imagens, textos, diagramações, animações e infográficos</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1 da-project-icon"><i class="text-danger far fa-chart-bar fa-2x fa-fw"></i></div>
-        <div class="col-10">
-          <div class="h4">Marketing</div>
-          <p>Planejamento e execução de campanhas online, criação de conteúdo e gerenciamento de mídias sociais</p>
-        </div>
-      </div>
-            <div class="row">
-        <div class="col-1 da-project-icon"><i class="text-info far fa-chart-bar fa-2x fa-fw"></i></div>
-        <div class="col-10">
-          <div class="h4">Mídias Sociais</div>
-          <p>Criar e publicar conteúdos para engajar o público e promover a marca. Monitora interações, analisa métricas e ajusta estratégias conforme os resultados.</p>
-        </div>
+
+    </nav>
+
+  </div>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <div class="da-home-page-text flex-grow-1 d-flex align-items-center"
+       data-aos="fade-right"
+       data-aos-duration="1000">
+
+    <div class="container">
+      <div class="col-md-10 col-sm-12 px-0 mx-0">
+        <h2 class="display-3 text-uppercase">
+          Fabiula Alves
+        </h2>
+        <h3 class="h4 mt-3">
+          Design Gráfico e Marketing
+        </h3>
+        <a class="smooth-scroll btn btn-outline-light mt-4" href="#projects">
+          Saiba Mais
+        </a>
       </div>
     </div>
-    <div class="col-md-6 px-0 da-project-2" style="background-image: url('images/foto-1.jpg')" data-aos="zoom-in"></div>
+
   </div>
-</div>
-<div class="da-expertise">
+
+</header>
+
+
+<div class="page-content">
+
+<div>
+
+
+<!-- =====================================================
+     EXPERIÊNCIA
+====================================================== -->
+
+<div class="da-expertise" id="projects">
+
   <div class="row mx-0">
-    <div class="col-md-6 px-0 da-exp-image" style="background-image: url('images/foto-2.jpg')" data-aos="zoom-in"></div>
+
+    <div class="col-md-6 px-0 da-exp-image"
+         style="background-image: url('images/foto-1.jpg')"
+         data-aos="zoom-in">
+    </div>
+
     <div class="col-md-6 da-exp-skills">
+
       <div class="container text-uppercase">
-        <h3 class="h5 mb-5">Experiência</h3>
-          <div class="col px-0 mb-4">
-          <p>Photoshop 90%</p>
-          <div class="progress" style="height: 5px;">
-            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
+
+        <!-- DESIGN GRÁFICO -->
         <div class="col px-0 mb-4">
-          <p>CapCut 90%</p>
-          <div class="progress" style="height: 5px;">
-            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          <h6>DESIGN GRÁFICO</h6>
+          <p style="font-size: 13px;">• Photoshop • Illustrator • GIMP • Inkscape</p>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 95%;"></div>
           </div>
         </div>
+
+        <!-- EDIÇÃO E MOTION -->
         <div class="col px-0 mb-4">
-          <p>Canva 85%</p>
-          <div class="progress" style="height: 5px;">
-            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          <h6>EDIÇÃO E MOTION</h6>
+          <p style="font-size: 13px;">• After Effects • CapCut • Animações • Vídeos</p>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 92%;"></div>
           </div>
         </div>
+
+        <!-- SOCIAL MEDIA -->
         <div class="col px-0 mb-4">
-          <p>Illustrator  75%</p>
-          <div class="progress" style="height: 5px;">
-            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          <h6>SOCIAL MEDIA</h6>
+          <p style="font-size: 13px;">• Canva • Posts • Stories • Carrosséis • Campanhas</p>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 90%;"></div>
           </div>
         </div>
+
+        <!-- WEB DESIGN -->
+        <div class="col px-0 mb-4">
+          <h6>WEB DESIGN</h6>
+          <p style="font-size: 13px;">• HTML • CSS • JavaScript • Landing Pages</p>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <!-- IA -->
+        <div class="col px-0 mb-4">
+          <h6>INTELIGÊNCIA ARTIFICIAL</h6>
+          <p style="font-size: 13px;">• ChatGPT • Gemini • Geração de imagens • Conteúdo</p>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- MARKETING -->
+        <div class="col px-0 mb-4">
+          <h6>MARKETING DIGITAL</h6>
+          <p style="font-size: 13px;">• Planejamento • Conteúdo • Campanhas • Redes Sociais</p>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 90%;"></div>
+          </div>
+        </div>
+
       </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     CASE 01 - TÍTULO
+====================================================== -->
+
+<div class="da-section bg-secondary text-white" id="gallery">
+
+  <div class="container">
+
+    <div class="row px-4">
+
+      <div class="col-md-6 col-sm-12">
+
+        <div class="media py-2" data-aos="flip-up">
+
+          <i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
+
+          <div class="media-body">
+
+            <div class="h1">
+              Drogaria
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     CASE 01 - VÍDEO + TEXTO
+====================================================== -->
+
+<div class="da-expertise">
+
+  <div class="row mx-0">
+
+    <!-- VÍDEO -->
+    <div class="case-video-column">
+
+      <div class="portfolio-video-area" data-aos="zoom-in">
+
+        <video class="portfolio-video" autoplay muted loop playsinline controls preload="metadata">
+          <source src="images/case1.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+
+      </div>
+
+    </div>
+
+
+    <!-- TEXTO -->
+    <div class="case-text-column da-exp-skills">
+
+      <div class="container">
+
+        <span class="project-label">PROJETO</span>
+
+        <h3 class="h4 mb-3">Drogaria Nanda e Drogabox</h3>
+
+        <p class="project-description">
+          Construção de uma identidade visual atrativa e coerente com o público da área de saúde e bem-estar. Planejamento de campanhas publicitárias e institucionais, criação de conteúdos para redes sociais e gerenciamento do processo de aprovação e divulgação de campanhas promocionais.
+        </p>
+
+        <!-- CARDS RESTAURADOS -->
+        <div class="tech-grid">
+
+          <div class="tech-card">
+            <strong>Mídia Indoor</strong>
+            <span>After Effects</span>
+          </div>
+
+          <div class="tech-card">
+            <strong>Redes Sociais</strong>
+            <span>Reels → CapCut • After Effects</span>
+            <span>Material impresso → Photoshop • Illustrator</span>
+          </div>
+
+          <div class="tech-card">
+            <strong>Estratégia de conteúdo</strong>
+            <span>Planejamento de Redes Sociais</span>
+            <span>Campanhas Promocionais</span>
+          </div>
+
+        </div>
+
+        <!-- MANUAL DE MARCA - DROGARIA -->
+        <div class="project-section">
+
+          <div class="project-section-title">Manual de marca — Rede Hiper Popular</div>
+
+          <p class="project-section-text">
+            Tudo seguiu as especificações técnicas e diretrizes visuais do manual de marca da “Rede Hiper Popular”:
+          </p>
+
+          <ul class="project-section-text mt-2 pl-3">
+            <li><strong>Conceito Estratégico:</strong> Marca posicionada com foco em acessibilidade, preço baixo e amplo mix de produtos.</li>
+            <li><strong>Logotipo:</strong> Aplicação preferencial na versão horizontal, respeitando margens de proteção e limites de redução mínima.</li>
+            <li><strong>Cores Principais:</strong>
+              <div class="color-swatch-group my-2">
+                <div class="color-swatch" style="background-color: #CA2C37;" title="Vermelho #CA2C37"></div>
+                <div class="color-swatch" style="background-color: #FFEF2D;" title="Amarelo #FFEF2D"></div>
+              </div>
+              Vermelho (HEX `#CA2C37`) e Amarelo (HEX `#FFEF2D`), com especificações diretas de referências Pantone e CMYK para impressão de alta precisão.
+            </li>
+            <li><strong>Tipografia Oficial:</strong> Utilização da família tipográfica <strong>Signika Bold</strong> e <strong>Gotham</strong> (em variados pesos) para garantir clareza e unidade em materiais impressos e digitais.</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     DROGARIA - GALERIA DE VÍDEOS
+====================================================== -->
+
+<div class="container da-gallery">
+  <br>
+  <div class="h3 pb-5 text-center" data-aos="fade-up">
+    Vídeos
+  </div>
+  <div class="card-columns">
+    <div class="card">
+      <a href="https://www.youtube.com/watch?v=Lf8WHS784Us&ab_channel=FabiulaAlves" data-toggle="lightbox" data-gallery="da-gallery">
+        <img class="img-fluid" src="images/portfolio-7.jpg" alt="Gallery Image 6"/>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.youtube.com/watch?v=jXwz5PgUuIk&ab_channel=FabiulaAlves" data-toggle="lightbox" data-gallery="da-gallery">
+        <img class="img-fluid" src="images/portfolio-8.jpg" alt="Gallery Image 7"/>
+      </a>
     </div>
   </div>
 </div>
 
-<!-- Inicio Barbearia -->
+
+<!-- =====================================================
+     CASE 02 - TÍTULO
+====================================================== -->
+
 <div class="da-section bg-secondary text-white">
+
   <div class="container">
+
     <div class="row px-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
+
+      <div class="col-md-6 col-sm-12">
+
+        <div class="media py-2" data-aos="flip-up">
+
+          <i class="mr-3 fas fa-laptop-code fa-3x fa-fw"></i>
+
           <div class="media-body">
-            <!--<div class="h5">300</div>-->
-            <div class="h1">Barbearia</div>
+
+            <div class="h1">
+              Landing Page
+            </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </div>
-<div class="container da-gallery" id="gallery">
-</br>
-  <div class="card-columns">
-    <div class="card"><a href="images/1 - barbearia.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/1 - barbearia.jpg" alt="Gallery Image 1" width="200" height="300"/></a></div>
-    <div class="card"><a href="images/2 - barbearia.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/2 - barbearia.jpg" alt="Gallery Image 2" width="200" height="300"/></a></div>
-    <div class="card"><a href="images/3 - barbearia.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/3 - barbearia.jpg" alt="Gallery Image 3" width="200" height="300"/></a></div>
-  </div>
-</div>
-<!-- Fim Barbearia -->
-<!-- Inicio Restaurante-->
-<div class="da-section bg-secondary text-white">
-  <div class="container">
-    <div class="row px-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
-          <div class="media-body">
-            <!--<div class="h5">300</div>-->
-            <div class="h1">Restaurante</div>
-          </div>
-        </div>
+
+
+<!-- =====================================================
+     CASE 02 - VÍDEO + TEXTO
+====================================================== -->
+
+<div class="da-expertise">
+
+  <div class="row mx-0">
+
+    <!-- VÍDEO -->
+    <div class="case-video-column">
+
+      <div class="portfolio-video-area" data-aos="zoom-in">
+
+        <video class="portfolio-video" autoplay muted loop playsinline controls preload="metadata">
+          <source src="images/case2.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+
       </div>
+
     </div>
-  </div>
-</div>
-<div class="container da-gallery" id="gallery">
-</br>
-  <div class="card-columns">
-    <div class="card"><a href="images/1 - restaurante.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/1 - restaurante.jpg" alt="Gallery Image 1" width="250" height="300"/></a></div>
-    <div class="card"><a href="images/2 - restaurante.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/2 - restaurante.jpg" alt="Gallery Image 2" width="250" height="300"/></a></div>
-    <div class="card"><a href="images/3 - restaurante.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/3 - restaurante.jpg" alt="Gallery Image 3" width="250" height="300"/></a></div>
-  </div>
-</div>
-<!-- Fim Restaurante-->
-<!-- Inicio Drogaria -->
-<div class="da-section bg-secondary text-white">
-  <div class="container">
-    <div class="row px-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
-          <div class="media-body">
-            <!--<div class="h5">300</div>-->
-            <div class="h1">Drogaria</div>
+
+
+    <!-- TEXTO -->
+    <div class="case-text-column da-exp-skills">
+
+      <div class="container">
+
+        <span class="project-label">PROJETO COMPLETO</span>
+
+        <h3 class="h4 mb-3">Landing Page para pequenos negócios</h3>
+
+        <p class="project-description">
+          Designer para Mídias Sociais e Indoor com atuação no auxílio à implementação de estratégias de marketing de conteúdo alinhadas aos objetivos de negócio de pequenos empreendedores e microempresas. Planejamento, produção, edição e publicação de conteúdos em diferentes formatos (artigos, redes sociais, e-mail marketing e materiais institucionais). Colaboração direta para desenvolver ideias criativas e aplicação de SEO para otimização e melhoria do posicionamento em mecanismos de busca, com foco em comércio local e MEIs.
+        </p>
+
+        <!-- CARDS RESTAURADOS -->
+        <div class="tech-grid">
+
+          <div class="tech-card">
+            <strong>IA — ChatGPT</strong>
+            <span>gerou parte do conteúdo e do código HTML</span>
           </div>
-        </div>
-      </div>
-      <!--<div class="col-md-3 col-sm-6">
-        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-smile  fa-3x fa-fw"></i>
-          <div class="media-body">
-            <div class="h5">25</div>
-            <div class="h6">Clientes Atendidos</div>
+
+          <div class="tech-card">
+            <strong>IA — Gemini</strong>
+            <span>Geração das imagens</span>
+            <span>Direção visual</span>
+            <span>Conceitos visuais</span>
           </div>
-        </div>
-      </div>-->
-      <!--<div class="col-md-3 col-sm-6">
-        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clipboard-check  fa-3x fa-fw"></i>
-          <div class="media-body">
-            <div class="h5">225</div>
-            <div class="h6">Aprovação</div>
+
+          <div class="tech-card">
+            <strong>Foco Principal</strong>
+            <span>Pequenas Empresas e MEIs</span>
+            <span>Comércio Local</span>
+            <span>Apresentação dos Serviços</span>
           </div>
+
         </div>
-      </div>-->
-      <!--<div class="col-md-3 col-sm-6">
-        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clock  fa-3x fa-fw"></i>
-          <div class="media-body">
-            <div class="h5">5010</div>
-            <div class="h6">Horas Trabalhadas</div>
+
+        <!-- MANUAL DE MARCA - LANDING PAGE -->
+        <div class="project-section">
+          <div class="project-section-title">Manual de marca — Landing Page</div>
+          <p class="project-section-text">
+            Definição da paleta cromática oficial e diretrizes visuais estabelecidas para a identidade digital do projeto:
+          </p>
+          <div class="color-swatch-group">
+            <div class="color-swatch" style="background-color: #070743;" title="#070743"></div>
+            <div class="color-swatch" style="background-color: #169d99;" title="#169d99"></div>
+            <div class="color-swatch" style="background-color: #b9cc01;" title="#b9cc01"></div>
+            <div class="color-swatch" style="background-color: #fae894;" title="#fae894"></div>
+            <div class="color-swatch" style="background-color: #ab0768;" title="#ab0768"></div>
           </div>
+          <p class="project-section-text">
+            Cores utilizadas: Azul Marinho (`#070743`), Verde Esmeralda (`#169d99`), Verde Lima (`#b9cc01`), Amarelo Suave (`#fae894`) e Magenta (`#ab0768`).
+          </p>
         </div>
-      </div>-->
-    </div>
-  </div>
-</div>
-<div class="container da-gallery" id="gallery">
-</br>
-  <div class="card-columns">
-    <div class="card"><a href="images/portfolio-1.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-1.jpg" alt="Gallery Image 1" width="250" height="300"/></a></div>
-    <div class="card"><a href="images/portfolio-2.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-2.jpg" alt="Gallery Image 2" width="250" height="300"/></a></div>
-    <div class="card"><a href="images/portfolio-3.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-3.jpg" alt="Gallery Image 3" width="250" height="300"/></a></div>
-    <div class="card"><a href="images/portfolio-4.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-4.jpg" alt="Gallery Image 4" width="250" height="300"/></a></div>
-    <div class="card"><a href="images/portfolio-5.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-5.jpg" alt="Gallery Image 5" width="250" height="300"/></a></div>
-  </div>
-</br>
-  <div class="h3 pb-5 text-center" data-aos="fade-up"> Vídeos</div>
-   <div class="card-columns">
-        <div class="card"><a href="https://www.youtube.com/watch?v=Lf8WHS784Us&ab_channel=FabiulaAlves" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-7.jpg" alt="Gallery Image 6"/></a></div>
-        <div class="card"><a href="https://www.youtube.com/watch?v=jXwz5PgUuIk&ab_channel=FabiulaAlves" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-8.jpg" alt="Gallery Image 7"/></a></div>
-        <div class="card"><a href="https://youtu.be/rXW3N0LDQv4" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-9.jpg" alt="Gallery Image 7"/></a></div>
-      </div>
-</div>
-<!-- Fim Drogaria -->
-    <footer class="bg-secondary da-section">
-      <div class="container text-white">
-        <div class="row justify-content-center">
-          Copyright &copy; Fabiula Alves.
+
+        <!-- GALERIA DAS IMAGENS DE IA (4 NA MESMA LINHA) -->
+        <div class="project-section">
+          <div class="project-section-title">Imagens Geradas via IA (Gemini)</div>
+          
+          <div class="ai-image-grid">
             
+            <!-- MINIATURA 1 -->
+            <div class="ai-image-item">
+              <div class="ai-image-thumb">
+                <img src="images/hero.png" alt="Hero Business Image" />
+              </div>
+              <button class="btn btn-outline-dark btn-view-prompt"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#prompt1"
+                      aria-expanded="false"
+                      aria-controls="prompt1">
+                <i class="fas fa-terminal mr-1"></i> Ver Prompt
+              </button>
+              <div class="collapse" id="prompt1">
+                <div class="prompt-box">
+                  <code>Create a high-end editorial photograph for a Brazilian small-business communication design portfolio website. Scene: an authentic Brazilian micro-entrepreneur working inside their small local business... Color direction inspired by: deep navy #070743, teal #169d99, lime #b9cc01, soft yellow #fae894, magenta #ab0768. Style: contemporary Brazilian editorial photography... No text in the image. Ultra realistic photography.</code>
+                </div>
+              </div>
+            </div>
+
+            <!-- MINIATURA 2 -->
+            <div class="ai-image-item">
+              <div class="ai-image-thumb">
+                <img src="images/artesanato.png" alt="Artisan Image" />
+              </div>
+              <button class="btn btn-outline-dark btn-view-prompt"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#prompt2"
+                      aria-expanded="false"
+                      aria-controls="prompt2">
+                <i class="fas fa-terminal mr-1"></i> Ver Prompt
+              </button>
+              <div class="collapse" id="prompt2">
+                <div class="prompt-box">
+                  <code>Create an editorial campaign photograph celebrating Brazilian local craftsmanship and handmade products. Scene: a Brazilian artisan working in a small creative studio or home workshop, surrounded by carefully arranged handmade products, natural materials, tools and finished pieces... Color palette inspired by: #070743 navy, #169d99 teal, #b9cc01 lime, #fae894 warm yellow, #ab0768 magenta... No text in the image.</code>
+                </div>
+              </div>
+            </div>
+
+            <!-- MINIATURA 3 -->
+            <div class="ai-image-item">
+              <div class="ai-image-thumb">
+                <img src="images/drogaria.png" alt="Pharmacy Image" />
+              </div>
+              <button class="btn btn-outline-dark btn-view-prompt"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#prompt3"
+                      aria-expanded="false"
+                      aria-controls="prompt3">
+                <i class="fas fa-terminal mr-1"></i> Ver Prompt
+              </button>
+              <div class="collapse" id="prompt3">
+                <div class="prompt-box">
+                  <code>Create a sophisticated editorial commercial photograph for a Brazilian neighborhood pharmacy communication campaign. Scene: a small modern Brazilian neighborhood pharmacy with an approachable, human atmosphere. A local customer is interacting naturally with a pharmacy professional... Color direction: deep navy #070743, teal #169d99, lime #b9cc01, warm yellow #fae894, magenta #ab0768... No text in the image.</code>
+                </div>
+              </div>
+            </div>
+
+            <!-- MINIATURA 4 -->
+            <div class="ai-image-item">
+              <div class="ai-image-thumb">
+                <img src="images/solucao.png" alt="Business Image" />
+              </div>
+              <button class="btn btn-outline-dark btn-view-prompt"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#prompt4"
+                      aria-expanded="false"
+                      aria-controls="prompt4">
+                <i class="fas fa-terminal mr-1"></i> Ver Prompt
+              </button>
+              <div class="collapse" id="prompt4">
+                <div class="prompt-box">
+                  <code>Create a conceptual editorial photograph representing the connection between a small local business and its digital communication. A Brazilian small-business owner is working at the counter of their business while using a smartphone to photograph a product... Color palette: #070743 #169d99 #b9cc01 #fae894 #ab0768... No text in the image.</code>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-    </footer>
-    <div id="scrolltop">
-      <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
+
+<!-- =====================================================
+     CÓDIGO HTML GERADO COM CHATGPT
+====================================================== -->
+<div class="project-section">
+  <div class="project-section-title">
+    ChatGPT — gerou parte do conteúdo e do código HTML
+  </div>
+  <p class="project-section-text">
+    O ChatGPT foi utilizado como ferramenta de apoio na criação de parte
+    do conteúdo e na estruturação do código HTML da landing page.
+  </p>
+  <button class="btn btn-outline-dark btn-view-prompt"
+          type="button"
+          data-toggle="collapse"
+          data-target="#chatgptHtmlCode"
+          aria-expanded="false"
+          aria-controls="chatgptHtmlCode">
+    <i class="fas fa-code mr-1"></i>
+    Ver código HTML da Landing Page
+  </button>
+  <div class="collapse mt-3" id="chatgptHtmlCode">
+    <div class="prompt-box"
+         style="max-height: 600px; overflow-y: auto;">
+      <pre style="
+        margin: 0;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-family: monospace;
+        font-size: 10px;
+        line-height: 1.5;
+        color: #555;
+        background: transparent;
+      "><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta name="description" content="Design, conteúdo e comunicação para pequenos negócios."&gt;
+  &lt;title&gt;
+    Você cuida do negócio. Eu cuido da comunicação.
+  &lt;/title&gt;
+  &lt;style&gt;
+    /* =====================================================
+       CORES
+    ===================================================== */
+    :root {
+      --navy: #070743;
+      --teal: #169d99;
+      --lime: #b9cc01;
+      --yellow: #fae894;
+      --magenta: #ab0768;
+      --cream: #fffdf4;
+      --white: #ffffff;
+      --black: #151526;
+      --gray: #68687a;
+      --light-gray: #e8e8ee;
+      --radius: 24px;
+      --radius-small: 16px;
+      --shadow: 0 20px 60px rgba(7, 7, 67, .12);
+      --transition: .3s ease;
+    }
+    /* =====================================================
+       RESET
+    ===================================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--black);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+    /* =====================================================
+       HEADER
+    ===================================================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 18px 5%;
+      transition:
+        var(--transition);
+    }
+    header.scrolled {
+      background: rgba(7, 7, 67, .96);
+      backdrop-filter: blur(14px);
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 900;
+      letter-spacing: -.04em;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      color: white;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+    .nav-cta {
+      background: var(--lime);
+      color: var(--navy);
+      padding: 12px 20px;
+      border-radius: 999px;
+      transition: var(--transition);
+    }
+    .nav-cta:hover {
+      background: var(--yellow);
+      transform: translateY(-2px);
+    }
+    .menu-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    /* =====================================================
+       HERO
+    ===================================================== */
+    .hero {
+      min-height: 100vh;
+      background: var(--navy);
+      color: white;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 80px;
+      padding: 140px 5% 90px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: var(--magenta);
+      border-radius: 50%;
+      filter: blur(130px);
+      opacity: .22;
+      right: -200px;
+      top: -180px;
+    }
+    .hero-content {
+      max-width: 850px;
+      position: relative;
+      z-index: 2;
+    }
+    .eyebrow {
+
+      display:
+        inline-block;
+
+      color:
+        var(--yellow);
+
+      font-size:
+        .75rem;
+
+      font-weight:
+        900;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        .14em;
+
+      margin-bottom:
+        28px;
+
+    }
+
+
+    .hero-title {
+
+      font-size:
+        clamp(3.2rem, 7vw, 7rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.075em;
+
+      margin-bottom:
+        40px;
+
+      max-width:
+        900px;
+
+    }
+
+
+    .hero-title .title-blue {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .hero-title .title-teal {
+
+      color:
+        var(--teal);
+
+    }
+
+
+    .hero-title .title-part + .title-part {
+
+      margin-left:
+        .22em;
+
+    }
+
+
+    .hero-text {
+
+      max-width:
+        560px;
+
+      color:
+        rgba(255,255,255,.78);
+
+      font-size:
+        1.15rem;
+
+      line-height:
+        1.65;
+
+      margin-bottom:
+        38px;
+
+    }
+
+
+    .primary-btn {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      gap:
+        10px;
+
+      background:
+        var(--lime);
+
+      color:
+        var(--navy);
+
+      padding:
+        18px 25px;
+
+      border-radius:
+        999px;
+
+      font-weight:
+        900;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .primary-btn:hover {
+
+      background:
+        var(--yellow);
+
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        0 15px 35px
+        rgba(185,204,1,.25);
+
+    }
+
+
+    .hero-image {
+
+      position:
+        relative;
+
+      z-index:
+        2;
+
+    }
+
+
+    .hero-image img {
+
+      height:
+        650px;
+
+      object-fit:
+        cover;
+
+      border-radius:
+        var(--radius);
+
+      box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.35);
+
+    }
+
+
+    /* =====================================================
+       ANIMAÇÃO
+    ===================================================== */
+
+    .reveal {
+
+      opacity:
+        0;
+
+      transform:
+        translateY(30px);
+
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+    }
+
+
+    .reveal.visible {
+
+      opacity:
+        1;
+
+      transform:
+        translateY(0);
+
+    }
+
+
+    /* =====================================================
+       LABEL
+    ===================================================== */
+
+    .section-label {
+
+      color:
+        var(--magenta);
+
+      font-size:
+        .75rem;
+
+      font-weight:
+        900;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        .14em;
+
+      margin-bottom:
+        24px;
+
+    }
+
+
+    /* =====================================================
+       PAIN
+    ===================================================== */
+
+    .pain {
+
+      background:
+        var(--yellow);
+
+      padding:
+        130px 5% 120px;
+
+    }
+
+
+    .pain-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .pain h2 {
+
+      max-width:
+        850px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.3rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        65px;
+
+    }
+
+
+    .pain-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(5, 1fr);
+
+      gap:
+        12px;
+
+    }
+
+
+    .pain-card {
+
+      min-height:
+        210px;
+
+      background:
+        var(--cream);
+
+      padding:
+        25px;
+
+      border-radius:
+        var(--radius-small);
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .pain-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      background:
+        white;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .pain-card span {
+
+      font-size:
+        1.8rem;
+
+    }
+
+
+    .pain-card p {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.05rem;
+
+      font-weight:
+        800;
+
+      line-height:
+        1.15;
+
+    }
+
+
+    .pain-answer {
+
+      text-align:
+        center;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(1.8rem, 3vw, 3rem);
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        -.04em;
+
+      margin-top:
+        90px;
+
+      padding:
+        0 20px;
+
+    }
+
+
+    /* =====================================================
+       SOLUÇÃO
+    ===================================================== */
+
+    .solution {
+
+      background:
+        var(--cream);
+
+      padding:
+        140px 5% 130px;
+
+    }
+
+
+    .solution-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        75px;
+
+      align-items:
+        center;
+
+    }
+
+
+    .solution h2 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        42px;
+
+    }
+
+
+    .solution-title .highlight {
+
+      color:
+        var(--teal);
+
+    }
+
+
+    .solution-intro {
+
+      max-width:
+        560px;
+
+      color:
+        var(--gray);
+
+      font-size:
+        1.1rem;
+
+      line-height:
+        1.7;
+
+    }
+
+
+    .solution-image {
+
+      position:
+        relative;
+
+    }
+
+
+    .solution-image img {
+
+      width:
+        100%;
+
+      height:
+        520px;
+
+      object-fit:
+        cover;
+
+      border-radius:
+        var(--radius);
+
+      box-shadow:
+        0 25px 60px
+        rgba(7,7,67,.15);
+
+    }
+
+
+    .image-caption {
+
+      position:
+        absolute;
+
+      left:
+        20px;
+
+      bottom:
+        20px;
+
+      max-width:
+        280px;
+
+      padding:
+        14px 18px;
+
+      border-radius:
+        12px;
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      font-size:
+        .85rem;
+
+      font-weight:
+        700;
+
+      line-height:
+        1.3;
+
+    }
+
+
+    .solution-list {
+
+      grid-column:
+        1 / -1;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap:
+        12px;
+
+    }
+
+
+    .solution-item {
+
+      padding:
+        22px 24px;
+
+      border-radius:
+        var(--radius-small);
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--light-gray);
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .solution-item:hover {
+
+      background:
+        var(--teal);
+
+      color:
+        white;
+
+      transform:
+        translateX(7px);
+
+    }
+
+
+    /* =====================================================
+       PARA QUEM É
+    ===================================================== */
+
+    .businesses {
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .businesses-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .businesses .section-label {
+
+      color:
+        var(--yellow);
+
+    }
+
+
+    .businesses h2 {
+
+      max-width:
+        1000px;
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.2rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        48px;
+
+    }
+
+
+    .business-title-first {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .business-title-second {
+
+      color:
+        var(--lime);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .businesses-intro {
+
+      max-width:
+        720px;
+
+      color:
+        rgba(255,255,255,.72);
+
+      font-size:
+        1.1rem;
+
+      line-height:
+        1.7;
+
+      margin-bottom:
+        70px;
+
+    }
+
+
+    .business-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        15px;
+
+    }
+
+
+    .business-card {
+
+      min-height:
+        350px;
+
+      padding:
+        30px;
+
+      border-radius:
+        var(--radius);
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      overflow:
+        hidden;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .business-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      box-shadow:
+        0 25px 50px
+        rgba(0,0,0,.2);
+
+    }
+
+
+    .business-card:nth-child(1) {
+
+      background:
+        var(--teal);
+
+    }
+
+
+    .business-card:nth-child(2) {
+
+      background:
+        var(--magenta);
+
+    }
+
+
+    .business-card:nth-child(3) {
+
+      background:
+        var(--lime);
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .business-card:nth-child(4) {
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .business-icon {
+
+      font-size:
+        .85rem;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        .12em;
+
+      opacity:
+        .8;
+
+    }
+
+
+    .business-card h3 {
+
+      font-size:
+        1.9rem;
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.05em;
+
+      margin-bottom:
+        15px;
+
+    }
+
+
+    .business-card p {
+
+      margin:
+        0;
+
+      line-height:
+        1.5;
+
+      opacity:
+        .8;
+
+    }
+
+
+    .businesses-bottom {
+
+      margin-top:
+        110px;
+
+      padding-top:
+        65px;
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.18);
+
+      text-align:
+        center;
+
+    }
+
+
+    .businesses-bottom strong {
+
+      display:
+        block;
+
+      color:
+        var(--yellow);
+
+      font-size:
+        clamp(1.8rem, 3vw, 2.7rem);
+
+      line-height:
+        1.05;
+
+    }
+
+
+    .businesses-bottom span {
+
+      display:
+        block;
+
+      max-width:
+        600px;
+
+      margin:
+        25px auto 0;
+
+      color:
+        rgba(255,255,255,.7);
+
+      font-size:
+        1.1rem;
+
+    }
+
+
+    /* =====================================================
+       RESULTADOS
+    ===================================================== */
+
+    .results {
+
+      background:
+        white;
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .results-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .results h2 {
+
+      max-width:
+        900px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        75px;
+
+    }
+
+
+    .result-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        25px;
+
+    }
+
+
+    .result {
+
+      padding:
+        30px 20px 20px 0;
+
+      border-top:
+        5px solid
+        var(--teal);
+
+    }
+
+
+    .result:nth-child(2) {
+
+      border-color:
+        var(--magenta);
+
+    }
+
+
+    .result:nth-child(3) {
+
+      border-color:
+        var(--lime);
+
+    }
+
+
+    .result:nth-child(4) {
+
+      border-color:
+        var(--yellow);
+
+    }
+
+
+    .result h3 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.6rem;
+
+      margin-bottom:
+        15px;
+
+    }
+
+
+    .result p {
+
+      color:
+        var(--gray);
+
+      line-height:
+        1.6;
+
+    }
+
+
+    /* =====================================================
+       PROCESSO
+    ===================================================== */
+
+    .process {
+
+      background:
+        var(--teal);
+
+      color:
+        white;
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .process-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .process .section-label {
+
+      color:
+        var(--yellow);
+
+    }
+
+
+    .process h2 {
+
+      max-width:
+        1000px;
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        85px;
+
+    }
+
+
+    .process-title-one {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .process-title-two {
+
+      color:
+        var(--yellow);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .process-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        15px;
+
+    }
+
+
+    .step {
+
+      min-height:
+        300px;
+
+      background:
+        rgba(255,255,255,.11);
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
+      border-radius:
+        var(--radius);
+
+      padding:
+        30px;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .step:hover {
+
+      background:
+        rgba(255,255,255,.18);
+
+      transform:
+        translateY(-7px);
+
+    }
+
+
+    .step-number {
+
+      width:
+        48px;
+
+      height:
+        48px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      border-radius:
+        50%;
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+      font-size:
+        .85rem;
+
+      font-weight:
+        900;
+
+    }
+
+
+    .step-content {
+
+      margin-top:
+        40px;
+
+    }
+
+
+    .step h3 {
+
+      font-size:
+        1.55rem;
+
+      line-height:
+        1;
+
+      margin-bottom:
+        15px;
+
+    }
+
+
+    .step p {
+
+      color:
+        rgba(255,255,255,.72);
+
+      line-height:
+        1.55;
+
+    }
+
+
+    /* =====================================================
+       SERVIÇOS
+    ===================================================== */
+
+    .services {
+
+      background:
+        var(--cream);
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .services-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .services h2 {
+
+      max-width:
+        1000px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        75px;
+
+    }
+
+
+    .services-title-first {
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .services-title-second {
+
+      color:
+        var(--magenta);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .service-list {
+
+      border-top:
+        1px solid
+        #dddde5;
+
+    }
+
+
+    .service {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        70px 1fr 1fr;
+
+      gap:
+        25px;
+
+      align-items:
+        center;
+
+      padding:
+        30px 0;
+
+      border-bottom:
+        1px solid
+        #dddde5;
+
+    }
+
+
+    .service-number {
+
+      color:
+        var(--magenta);
+
+      font-weight:
+        900;
+
+    }
+
+
+    .service h3 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.35rem;
+
+    }
+
+
+    .service p {
+
+      color:
+        var(--gray);
+
+      line-height:
+        1.5;
+
+    }
+
+
+    /* =====================================================
+       PORTFÓLIO
+    ===================================================== */
+
+    .portfolio {
+
+      background:
+        var(--yellow);
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .portfolio-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .portfolio h2 {
+
+      max-width:
+        1000px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        75px;
+
+    }
+
+
+    .portfolio-title-first {
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .portfolio-title-second {
+
+      color:
+        var(--magenta);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .portfolio-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap:
+        20px;
+
+    }
+
+
+    .portfolio-card {
+
+      background:
+        white;
+
+      border-radius:
+        var(--radius);
+
+      overflow:
+        hidden;
+
+      box-shadow:
+        0 15px 40px
+        rgba(7,7,67,.08);
+
+    }
+
+
+    .portfolio-card img {
+
+      height:
+        400px;
+
+      object-fit:
+        cover;
+
+    }
+
+
+    .portfolio-content {
+
+      padding:
+        28px;
+
+    }
+
+
+    .portfolio-content h3 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.6rem;
+
+      margin-bottom:
+        8px;
+
+    }
+
+
+    .portfolio-content p {
+
+      color:
+        var(--gray);
+
+    }
+
+
+    /* =====================================================
+       CTA FINAL
+    ===================================================== */
+
+    .final-cta {
+
+      background:
+        var(--magenta);
+
+      color:
+        white;
+
+      padding:
+        160px 5%;
+
+      text-align:
+        center;
+
+    }
+
+
+    .final-cta-inner {
+
+      max-width:
+        1050px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .final-cta h2 {
+
+      font-size:
+        clamp(3.2rem, 7vw, 7rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.075em;
+
+      margin-bottom:
+        45px;
+
+    }
+
+
+    .final-title-first {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .final-title-second {
+
+      color:
+        var(--yellow);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .final-cta p {
+
+      max-width:
+        650px;
+
+      margin:
+        0 auto 42px;
+
+      font-size:
+        1.15rem;
+
+      line-height:
+        1.65;
+
+      color:
+        rgba(255,255,255,.85);
+
+    }
+
+
+    .cta-button {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+      padding:
+        18px 30px;
+
+      border-radius:
+        999px;
+
+      font-weight:
+        900;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .cta-button:hover {
+
+      background:
+        white;
+
+      transform:
+        scale(1.04);
+
+    }
+
+
+    /* =====================================================
+       CONTATO
+    ===================================================== */
+
+    .contact {
+
+      background:
+        var(--cream);
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .contact-inner {
+
+      max-width:
+        800px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .contact h2 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        45px;
+
+    }
+
+
+    form {
+
+      display:
+        grid;
+
+      gap:
+        15px;
+
+    }
+
+
+    input,
+    textarea {
+
+      width:
+        100%;
+
+      padding:
+        17px;
+
+      border:
+        1px solid
+        #dddde5;
+
+      border-radius:
+        var(--radius-small);
+
+      background:
+        white;
+
+      outline:
+        none;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    input:focus,
+    textarea:focus {
+
+      border-color:
+        var(--teal);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(22,157,153,.1);
+
+    }
+
+
+    textarea {
+
+      min-height:
+        150px;
+
+      resize:
+        vertical;
+
+    }
+
+
+    .submit-btn {
+
+      border:
+        none;
+
+      cursor:
+        pointer;
+
+      padding:
+        18px;
+
+      border-radius:
+        999px;
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      font-weight:
+        900;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .submit-btn:hover {
+
+      background:
+        var(--teal);
+
+    }
+
+
+    #form-message {
+
+      display:
+        none;
+
+      margin-top:
+        15px;
+
+      padding:
+        15px;
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+      border-radius:
+        var(--radius-small);
+
+      font-weight:
+        700;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer {
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      padding:
+        50px 5%;
+
+    }
+
+
+    .footer-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        30px;
+
+    }
+
+
+    footer small {
+
+      color:
+        rgba(255,255,255,.5);
+
+    }
+
+
+    /* =====================================================
+       TABLET
+    ===================================================== */
+
+    @media (max-width: 1000px) {
+
+      .hero,
+      .solution-inner {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .hero-image img {
+
+        height:
+          520px;
+
+      }
+
+
+      .pain-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .business-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .result-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .process-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+    }
+
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
+
+    @media (max-width: 700px) {
+
+      header {
+
+        padding:
+          16px 5%;
+
+      }
+
+
+      .nav-links {
+
+        display:
+          none;
+
+        position:
+          absolute;
+
+        left:
+          5%;
+
+        right:
+          5%;
+
+        top:
+          70px;
+
+        padding:
+          25px;
+
+        background:
+          var(--navy);
+
+        border-radius:
+          var(--radius-small);
+
+        flex-direction:
+          column;
+
+        align-items:
+          stretch;
+
+      }
+
+
+      .nav-links.active {
+
+        display:
+          flex;
+
+      }
+
+
+      .menu-toggle {
+
+        display:
+          block;
+
+      }
+
+
+      .hero {
+
+        grid-template-columns:
+          1fr;
+
+        padding:
+          120px 5% 70px;
+
+        gap:
+          55px;
+
+      }
+
+
+      .hero-title {
+
+        font-size:
+          3.5rem;
+
+      }
+
+
+      .hero-title .title-part + .title-part {
+
+        margin-left:
+          .12em;
+
+      }
+
+
+      .hero-image img {
+
+        height:
+          420px;
+
+      }
+
+
+      .pain,
+      .solution,
+      .businesses,
+      .results,
+      .process,
+      .services,
+      .portfolio,
+      .contact {
+
+        padding:
+          90px 5%;
+
+      }
+
+
+      .pain-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .pain-card {
+
+        min-height:
+          160px;
+
+      }
+
+
+      .pain-answer {
+
+        margin-top:
+          65px;
+
+      }
+
+
+      .solution-inner {
+
+        grid-template-columns:
+          1fr;
+
+        gap:
+          40px;
+
+      }
+
+
+      .solution-image img {
+
+        height:
+          420px;
+
+      }
+
+
+      .solution-list {
+
+        grid-column:
+          auto;
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .business-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .business-card {
+
+        min-height:
+          280px;
+
+      }
+
+
+      .businesses-bottom {
+
+        margin-top:
+          75px;
+
+        padding-top:
+          45px;
+
+      }
+
+
+      .business-title-second,
+      .process-title-two,
+      .services-title-second,
+      .portfolio-title-second,
+      .final-title-second {
+
+        margin-left:
+          0;
+
+      }
+
+
+      .result-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .process-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .step {
+
+        min-height:
+          250px;
+
+      }
+
+
+      .step-content {
+
+        margin-top:
+          25px;
+
+      }
+
+
+      .service {
+
+        grid-template-columns:
+          50px 1fr;
+
+        gap:
+          15px;
+
+      }
+
+
+      .service p {
+
+        grid-column:
+          2;
+
+      }
+
+
+      .portfolio-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .portfolio-card img {
+
+        height:
+          300px;
+
+      }
+
+
+      .final-cta {
+
+        padding:
+          110px 5%;
+
+      }
+
+
+      .footer-inner {
+
+        flex-direction:
+          column;
+
+        align-items:
+          flex-start;
+
+      }
+
+    }
+
+  &lt;/style&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+  &lt;header id="header"&gt;
+
+    &lt;nav&gt;
+
+      &lt;a href="#" class="logo"&gt;
+        Fabiula Alves
+      &lt;/a&gt;
+
+      &lt;button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      &gt;
+        ☰
+      &lt;/button&gt;
+
+      &lt;div class="nav-links" id="navLinks"&gt;
+
+        &lt;a href="#solucao"&gt;
+          Como posso ajudar
+        &lt;/a&gt;
+
+        &lt;a href="#servicos"&gt;
+          Serviços
+        &lt;/a&gt;
+
+        &lt;a href="#projetos"&gt;
+          Projetos
+        &lt;/a&gt;
+
+        &lt;a href="#contato" class="nav-cta"&gt;
+          Vamos conversar
+        &lt;/a&gt;
+
+      &lt;/div&gt;
+
+    &lt;/nav&gt;
+
+  &lt;/header&gt;
+
+
+  &lt;main&gt;
+
+
+    &lt;section class="hero"&gt;
+
+      &lt;div class="hero-content reveal"&gt;
+
+        &lt;h1 class="hero-title"&gt;
+
+          &lt;span class="title-part title-blue"&gt;
+            Você cuida do negócio.
+          &lt;/span&gt;
+
+          &lt;span class="title-part title-teal"&gt;
+            &lt;br&gt;Eu cuido da comunicação.
+          &lt;/span&gt;
+
+        &lt;/h1&gt;
+
+        &lt;p class="hero-text"&gt;
+
+          Conteúdo, design e divulgação para quem trabalha
+          todos os dias para fazer o próprio negócio acontecer.
+
+        &lt;/p&gt;
+
+        &lt;a href="#contato" class="primary-btn"&gt;
+          Quero organizar minha comunicação →
+        &lt;/a&gt;
+
+      &lt;/div&gt;
+
+
+      &lt;div class="hero-image reveal"&gt;
+
+        &lt;img
+          src="images/hero.png"
+          alt="Pessoa trabalhando em seu pequeno negócio"
+        &gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="pain"&gt;
+
+      &lt;div class="pain-inner"&gt;
+
+        &lt;div class="section-label"&gt;
+          Se você tem um pequeno negócio...
+        &lt;/div&gt;
+
+        &lt;h2 class="reveal"&gt;
+          Talvez você já tenha pensado:
+        &lt;/h2&gt;
+
+        &lt;div class="pain-grid"&gt;
+
+          &lt;article class="pain-card reveal"&gt;
+            &lt;span&gt;📱&lt;/span&gt;
+            &lt;p&gt;
+              “Eu não sei o que postar.”
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+          &lt;article class="pain-card reveal"&gt;
+            &lt;span&gt;😩&lt;/span&gt;
+            &lt;p&gt;
+              “Posto, mas quase ninguém chama.”
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+          &lt;article class="pain-card reveal"&gt;
+            &lt;span&gt;⏰&lt;/span&gt;
+            &lt;p&gt;
+              “Não tenho tempo para cuidar do Instagram.”
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+          &lt;article class="pain-card reveal"&gt;
+            &lt;span&gt;📣&lt;/span&gt;
+            &lt;p&gt;
+              “Tenho uma promoção, mas não sei como divulgar.”
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+          &lt;article class="pain-card reveal"&gt;
+            &lt;span&gt;💭&lt;/span&gt;
+            &lt;p&gt;
+              “Meu negócio é bom, mas meu perfil não mostra isso.”
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+        &lt;/div&gt;
+
+        &lt;p class="pain-answer reveal"&gt;
+          Você não precisa fazer tudo sozinho.
+        &lt;/p&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="solution" id="solucao"&gt;
+
+      &lt;div class="solution-inner"&gt;
+
+        &lt;div class="solution-content reveal"&gt;
+
+          &lt;div class="section-label"&gt;
+            A solução
+          &lt;/div&gt;
+
+          &lt;h2 class="solution-title"&gt;
+
+            Eu transformo o que você já faz
+            &lt;span class="highlight"&gt;
+              em conteúdo.
+            &lt;/span&gt;
+
+          &lt;/h2&gt;
+
+          &lt;p class="solution-intro"&gt;
+
+            Você me conta o que vende, para quem vende e
+            o que quer divulgar. Eu ajudo a transformar isso
+            em uma comunicação clara, bonita e útil para
+            o seu cliente.
+
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class="solution-image reveal"&gt;
+
+          &lt;img
+            src="images/solucao.png"
+            alt="Pequena empreendedora criando conteúdo para divulgar seu negócio"
+          &gt;
+
+          &lt;div class="image-caption"&gt;
+            Do negócio real para uma comunicação que conecta.
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class="solution-list"&gt;
+
+          &lt;div class="solution-item reveal"&gt;
+            &lt;strong&gt;📱 Posts e carrosséis&lt;/strong&gt;
+            &lt;span&gt;→&lt;/span&gt;
+          &lt;/div&gt;
+
+          &lt;div class="solution-item reveal"&gt;
+            &lt;strong&gt;🎬 Reels e stories&lt;/strong&gt;
+            &lt;span&gt;→&lt;/span&gt;
+          &lt;/div&gt;
+
+          &lt;div class="solution-item reveal"&gt;
+            &lt;strong&gt;📣 Promoções e campanhas&lt;/strong&gt;
+            &lt;span&gt;→&lt;/span&gt;
+          &lt;/div&gt;
+
+          &lt;div class="solution-item reveal"&gt;
+            &lt;strong&gt;🖨️ Materiais para impressão e indoor&lt;/strong&gt;
+            &lt;span&gt;→&lt;/span&gt;
+          &lt;/div&gt;
+
+          &lt;div class="solution-item reveal"&gt;
+            &lt;strong&gt;💬 Materiais para WhatsApp&lt;/strong&gt;
+            &lt;span&gt;→&lt;/span&gt;
+          &lt;/div&gt;
+
+          &lt;div class="solution-item reveal"&gt;
+            &lt;strong&gt;🖥️ Landing pages&lt;/strong&gt;
+            &lt;span&gt;→&lt;/span&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="businesses" id="para-quem"&gt;
+
+      &lt;div class="businesses-inner"&gt;
+
+        &lt;div class="section-label"&gt;
+          Para pequenos negócios
+        &lt;/div&gt;
+
+        &lt;h2 class="reveal"&gt;
+
+          &lt;span class="business-title-first"&gt;
+            Seu negócio é único.
+          &lt;/span&gt;
+
+          &lt;span class="business-title-second"&gt;
+            Sua comunicação também.
+          &lt;/span&gt;
+
+        &lt;/h2&gt;
+
+        &lt;p class="businesses-intro reveal"&gt;
+
+          Cada negócio tem uma rotina, um público e uma forma
+          de vender. O trabalho é entender essa realidade e
+          transformar o que você já faz em uma comunicação
+          clara, consistente e próxima das pessoas.
+
+        &lt;/p&gt;
+
+        &lt;div class="business-grid"&gt;
+
+          &lt;article class="business-card reveal"&gt;
+
+            &lt;div class="business-icon"&gt;
+              01
+            &lt;/div&gt;
+
+            &lt;div&gt;
+
+              &lt;h3&gt;
+                Comércio local
+              &lt;/h3&gt;
+
+              &lt;p&gt;
+                Produtos, ofertas, novidades e campanhas
+                para aproximar seu negócio dos clientes.
+              &lt;/p&gt;
+
+            &lt;/div&gt;
+
+          &lt;/article&gt;
+
+
+          &lt;article class="business-card reveal"&gt;
+
+            &lt;div class="business-icon"&gt;
+              02
+            &lt;/div&gt;
+
+            &lt;div&gt;
+
+              &lt;h3&gt;
+                Serviços
+              &lt;/h3&gt;
+
+              &lt;p&gt;
+                Conteúdo que apresenta seu trabalho,
+                gera confiança e facilita o contato.
+              &lt;/p&gt;
+
+            &lt;/div&gt;
+
+          &lt;/article&gt;
+
+
+          &lt;article class="business-card reveal"&gt;
+
+            &lt;div class="business-icon"&gt;
+              03
+            &lt;/div&gt;
+
+            &lt;div&gt;
+
+              &lt;h3&gt;
+                Produtos autorais
+              &lt;/h3&gt;
+
+              &lt;p&gt;
+                Design e conteúdo para mostrar processos,
+                histórias, detalhes e valor.
+              &lt;/p&gt;
+
+            &lt;/div&gt;
+
+          &lt;/article&gt;
+
+
+          &lt;article class="business-card reveal"&gt;
+
+            &lt;div class="business-icon"&gt;
+              04
+            &lt;/div&gt;
+
+            &lt;div&gt;
+
+              &lt;h3&gt;
+                Pequenos negócios
+              &lt;/h3&gt;
+
+              &lt;p&gt;
+                Uma comunicação pensada para a realidade
+                de quem faz muita coisa e não pode parar.
+              &lt;/p&gt;
+
+            &lt;/div&gt;
+
+          &lt;/article&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class="businesses-bottom reveal"&gt;
+
+          &lt;strong&gt;
+            Não importa o tamanho do negócio.
+          &lt;/strong&gt;
+
+          &lt;span&gt;
+            Importa encontrar a melhor forma de contar
+            o que você faz.
+          &lt;/span&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="results"&gt;
+
+      &lt;div class="results-inner"&gt;
+
+        &lt;div class="section-label"&gt;
+          O que a comunicação precisa fazer
+        &lt;/div&gt;
+
+        &lt;h2 class="reveal"&gt;
+          Você não precisa de mais um post bonito.
+        &lt;/h2&gt;
+
+        &lt;div class="result-grid"&gt;
+
+          &lt;article class="result reveal"&gt;
+            &lt;h3&gt;Chamar atenção&lt;/h3&gt;
+            &lt;p&gt;
+              Fazer seu negócio aparecer
+              no meio de tanta informação.
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+          &lt;article class="result reveal"&gt;
+            &lt;h3&gt;Explicar&lt;/h3&gt;
+            &lt;p&gt;
+              Mostrar o que você oferece
+              e por que isso importa.
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+          &lt;article class="result reveal"&gt;
+            &lt;h3&gt;Convidar&lt;/h3&gt;
+            &lt;p&gt;
+              Levar o cliente para o WhatsApp,
+              loja, agendamento ou compra.
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+          &lt;article class="result reveal"&gt;
+            &lt;h3&gt;Ser lembrado&lt;/h3&gt;
+            &lt;p&gt;
+              Criar uma presença que continua
+              na cabeça do cliente.
+            &lt;/p&gt;
+          &lt;/article&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="process" id="processo"&gt;
+
+      &lt;div class="process-inner"&gt;
+
+        &lt;div class="section-label"&gt;
+          Como funciona
+        &lt;/div&gt;
+
+        &lt;h2 class="reveal"&gt;
+
+          &lt;span class="process-title-one"&gt;
+            Simples para você.
+          &lt;/span&gt;
+
+          &lt;span class="process-title-two"&gt;
+            Estratégico no processo.
+          &lt;/span&gt;
+
+        &lt;/h2&gt;
+
+        &lt;div class="process-grid"&gt;
+
+          &lt;article class="step reveal"&gt;
+            &lt;div class="step-number"&gt;01&lt;/div&gt;
+
+            &lt;div class="step-content"&gt;
+              &lt;h3&gt;Você me conta&lt;/h3&gt;
+              &lt;p&gt;
+                O que faz, vende e quer divulgar.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+
+          &lt;article class="step reveal"&gt;
+            &lt;div class="step-number"&gt;02&lt;/div&gt;
+
+            &lt;div class="step-content"&gt;
+              &lt;h3&gt;Eu organizo&lt;/h3&gt;
+              &lt;p&gt;
+                Transformo suas ideias
+                em conteúdo e peças.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+
+          &lt;article class="step reveal"&gt;
+            &lt;div class="step-number"&gt;03&lt;/div&gt;
+
+            &lt;div class="step-content"&gt;
+              &lt;h3&gt;A gente divulga&lt;/h3&gt;
+              &lt;p&gt;
+                Você recebe os materiais
+                prontos para usar.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+
+          &lt;article class="step reveal"&gt;
+            &lt;div class="step-number"&gt;04&lt;/div&gt;
+
+            &lt;div class="step-content"&gt;
+              &lt;h3&gt;Você cuida do negócio&lt;/h3&gt;
+              &lt;p&gt;
+                Enquanto a comunicação
+                continua acontecendo.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="services" id="servicos"&gt;
+
+      &lt;div class="services-inner"&gt;
+
+        &lt;div class="section-label"&gt;
+          O que posso fazer
+        &lt;/div&gt;
+
+        &lt;h2 class="reveal"&gt;
+
+          &lt;span class="services-title-first"&gt;
+            Comunicação para o dia a dia
+          &lt;/span&gt;
+
+          &lt;span class="services-title-second"&gt;
+            do seu negócio.
+          &lt;/span&gt;
+
+        &lt;/h2&gt;
+
+        &lt;div class="service-list"&gt;
+
+          &lt;div class="service reveal"&gt;
+            &lt;span class="service-number"&gt;01&lt;/span&gt;
+            &lt;h3&gt;Redes sociais&lt;/h3&gt;
+            &lt;p&gt;
+              Posts, carrosséis, stories,
+              reels e peças para Instagram.
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class="service reveal"&gt;
+            &lt;span class="service-number"&gt;02&lt;/span&gt;
+            &lt;h3&gt;Promoções&lt;/h3&gt;
+            &lt;p&gt;
+              Campanhas, ofertas, lançamentos
+              e datas especiais.
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class="service reveal"&gt;
+            &lt;span class="service-number"&gt;03&lt;/span&gt;
+            &lt;h3&gt;Design&lt;/h3&gt;
+            &lt;p&gt;
+              Artes digitais, materiais impressos,
+              cardápios e comunicação indoor.
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class="service reveal"&gt;
+            &lt;span class="service-number"&gt;04&lt;/span&gt;
+            &lt;h3&gt;Conteúdo&lt;/h3&gt;
+            &lt;p&gt;
+              Planejamento e produção de conteúdos
+              para diferentes canais.
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class="service reveal"&gt;
+            &lt;span class="service-number"&gt;05&lt;/span&gt;
+            &lt;h3&gt;WhatsApp&lt;/h3&gt;
+            &lt;p&gt;
+              Materiais para apresentar produtos,
+              serviços e ofertas.
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class="service reveal"&gt;
+            &lt;span class="service-number"&gt;06&lt;/span&gt;
+            &lt;h3&gt;Landing pages&lt;/h3&gt;
+            &lt;p&gt;
+              Páginas para apresentar serviços,
+              produtos e campanhas.
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="portfolio" id="projetos"&gt;
+
+      &lt;div class="portfolio-inner"&gt;
+
+        &lt;div class="section-label"&gt;
+          Projetos
+        &lt;/div&gt;
+
+        &lt;h2 class="reveal"&gt;
+
+          &lt;span class="portfolio-title-first"&gt;
+            Alguns projetos que ganharam forma
+          &lt;/span&gt;
+
+          &lt;span class="portfolio-title-second"&gt;
+            através do design.
+          &lt;/span&gt;
+
+        &lt;/h2&gt;
+
+        &lt;div class="portfolio-grid"&gt;
+
+          &lt;article class="portfolio-card reveal"&gt;
+
+            &lt;img
+              src="images/artesanato.png"
+              alt="Campanha de valorização do artesanato local"
+            &gt;
+
+            &lt;div class="portfolio-content"&gt;
+
+              &lt;h3&gt;
+                Artesanato local
+              &lt;/h3&gt;
+
+              &lt;p&gt;
+                Campanha para valorizar produtos,
+                artesãos e produção local.
+              &lt;/p&gt;
+
+            &lt;/div&gt;
+
+          &lt;/article&gt;
+
+
+          &lt;article class="portfolio-card reveal"&gt;
+
+            &lt;img
+              src="images/drogaria.png"
+              alt="Projeto de comunicação para drogaria"
+            &gt;
+
+            &lt;div class="portfolio-content"&gt;
+
+              &lt;h3&gt;
+                Drogaria
+              &lt;/h3&gt;
+
+              &lt;p&gt;
+                Comunicação comercial para
+                divulgação de produtos e ofertas.
+              &lt;/p&gt;
+
+            &lt;/div&gt;
+
+          &lt;/article&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="final-cta"&gt;
+
+      &lt;div class="final-cta-inner reveal"&gt;
+
+        &lt;h2&gt;
+
+          &lt;span class="final-title-first"&gt;
+            Seu negócio tem algo a dizer.
+          &lt;/span&gt;
+
+          &lt;span class="final-title-second"&gt;
+            Vamos mostrar isso.
+          &lt;/span&gt;
+
+        &lt;/h2&gt;
+
+        &lt;p&gt;
+
+          Vamos transformar o que você faz todos os dias
+          em uma comunicação que seus clientes entendam,
+          lembrem e queiram conhecer.
+
+        &lt;/p&gt;
+
+        &lt;a href="#contato" class="cta-button"&gt;
+          QUERO FORTALECER MEU NEGÓCIO →
+        &lt;/a&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;section class="contact" id="contato"&gt;
+
+      &lt;div class="contact-inner"&gt;
+
+        &lt;div class="section-label"&gt;
+          Vamos conversar
+        &lt;/div&gt;
+
+        &lt;h2&gt;
+          Me conta o que você precisa.
+        &lt;/h2&gt;
+
+        &lt;form id="contactForm"&gt;
+
+          &lt;input
+            type="text"
+            name="name"
+            placeholder="Seu nome"
+            required
+          &gt;
+
+          &lt;input
+            type="text"
+            name="business"
+            placeholder="Nome do seu negócio"
+            required
+          &gt;
+
+          &lt;input
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required
+          &gt;
+
+          &lt;textarea
+            name="message"
+            placeholder="O que você gostaria de divulgar ou melhorar?"
+            required
+          &gt;&lt;/textarea&gt;
+
+          &lt;button
+            type="submit"
+            class="submit-btn"
+          &gt;
+            QUERO CONVERSAR →
+          &lt;/button&gt;
+
+        &lt;/form&gt;
+
+
+        &lt;div id="form-message"&gt;
+          Obrigado! Sua mensagem foi recebida.
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+  &lt;/main&gt;
+
+
+  &lt;footer&gt;
+
+    &lt;div class="footer-inner"&gt;
+
+      &lt;strong&gt;
+        Fabiula Alves © 2026
+      &lt;/strong&gt;
+
+      &lt;small&gt;
+        Design · Conteúdo · Comunicação
+      &lt;/small&gt;
+
+    &lt;/div&gt;
+
+  &lt;/footer&gt;
+
+
+  &lt;script&gt;
+
+    const header =
+      document.getElementById("header");
+
+    window.addEventListener(
+      "scroll",
+      () =&gt; {
+
+        if (window.scrollY &gt; 50) {
+
+          header.classList.add("scrolled");
+
+        } else {
+
+          header.classList.remove("scrolled");
+
+        }
+
+      }
+    );
+
+
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+    menuToggle.addEventListener(
+      "click",
+      () =&gt; {
+
+        const isOpen =
+          navLinks.classList.toggle("active");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          isOpen
+        );
+
+      }
+    );
+
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(
+        link =&gt; {
+
+          link.addEventListener(
+            "click",
+            () =&gt; {
+
+              navLinks.classList.remove("active");
+
+              menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+
+            }
+          );
+
+        }
+      );
+
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+    const observer =
+      new IntersectionObserver(
+        entries =&gt; {
+
+          entries.forEach(
+            entry =&gt; {
+
+              if (
+                entry.isIntersecting
+              ) {
+
+                entry.target.classList.add(
+                  "visible"
+                );
+
+                observer.unobserve(
+                  entry.target
+                );
+
+              }
+
+            }
+          );
+
+        },
+        {
+          threshold:
+            .12
+        }
+      );
+
+
+    revealElements.forEach(
+      element =&gt; {
+
+        observer.observe(element);
+
+      }
+    );
+
+
+    const form =
+      document.getElementById("contactForm");
+
+    const formMessage =
+      document.getElementById("form-message");
+
+    form.addEventListener(
+      "submit",
+      event =&gt; {
+
+        event.preventDefault();
+
+        formMessage.style.display =
+          "block";
+
+        form.reset();
+
+        setTimeout(
+          () =&gt; {
+
+            formMessage.style.display =
+              "none";
+
+          },
+          5000
+        );
+
+      }
+    );
+
+  &lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
     </div>
-    <script src="scripts/jquery.min.js?ver=1.2.0"></script>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="scripts/aos.js?ver=1.2.0"></script>
-    <script src="scripts/ekko-lightbox.min.js?ver=1.2.0"></script>
-    <script src="scripts/main.js?ver=1.2.0"></script>
-  </body>
+
+  </div>
+
+</div>
+<!-- Fim  Código Landing Page -->
+
+        <div class="pt-4">
+          <a class="smooth-scroll btn btn-outline-primary" href="landingpage.html">
+            Projeto Completo
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="bg-secondary da-section">
+
+  <div class="container text-white">
+
+    <div class="row justify-content-center">
+      Copyright &copy; Fabiula Alves.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =====================================================
+     SCROLL TOP
+====================================================== -->
+
+<div id="scrolltop">
+
+  <button class="btn btn-primary">
+
+    <span class="icon">
+      <i class="fas fa-angle-up fa-2x"></i>
+    </span>
+
+  </button>
+
+</div>
+
+
+<!-- =====================================================
+     SCRIPTS
+====================================================== -->
+
+<script src="scripts/jquery.min.js?ver=1.2.0"></script>
+
+<script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+
+<script src="scripts/aos.js?ver=1.2.0"></script>
+
+<script src="scripts/ekko-lightbox.min.js?ver=1.2.0"></script>
+
+<script src="scripts/main.js?ver=1.2.0"></script>
+
+
+</body>
+
 </html>

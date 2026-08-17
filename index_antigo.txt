@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fabiula Alves</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap"/>
+    </noscript>
+    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/ekko-lightbox.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <header class="d-flex flex-column">
+      <div class="container pt-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand" href="#">Portfólio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Experiência</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Projetos</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="da-home-page-text flex-grow-1 d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000">
+        <div class="container">
+          <div class="col-md-10 col-sm-12 px-0 mx-0">
+            <h2 class="display-3 text-uppercase">Fabiula Alves</h2>
+            <h3 class="h4 mt-3">Design Gráfico e Marketing</h3><a class="smooth-scroll btn btn-outline-light mt-4" href="#projects">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+
+<div class="da-projects" id="projects">
+  <div class="row mx-0">
+    <div class="col-md-6 pl-5 pt-5 pb-3">
+      <div class="row mb-3">
+      </div>
+      <div class="row mb-3">
+        <div class="col-1 da-project-icon"><i class="text-success far fa-chart-bar fa-2x fa-fw"></i></div>
+        <div class="col-10">
+          <div class="h4">Designer</div>
+          <p>Sites, imagens, textos, diagramações, animações e infográficos</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 da-project-icon"><i class="text-danger far fa-chart-bar fa-2x fa-fw"></i></div>
+        <div class="col-10">
+          <div class="h4">Marketing</div>
+          <p>Planejamento e execução de campanhas online, criação de conteúdo e gerenciamento de mídias sociais</p>
+        </div>
+      </div>
+            <div class="row">
+        <div class="col-1 da-project-icon"><i class="text-info far fa-chart-bar fa-2x fa-fw"></i></div>
+        <div class="col-10">
+          <div class="h4">Mídias Sociais</div>
+          <p>Criar e publicar conteúdos para engajar o público e promover a marca. Monitora interações, analisa métricas e ajusta estratégias conforme os resultados.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 px-0 da-project-2" style="background-image: url('images/foto-1.jpg')" data-aos="zoom-in"></div>
+  </div>
+</div>
+<div class="da-expertise">
+  <div class="row mx-0">
+    <div class="col-md-6 px-0 da-exp-image" style="background-image: url('images/foto-2.jpg')" data-aos="zoom-in"></div>
+    <div class="col-md-6 da-exp-skills">
+      <div class="container text-uppercase">
+        <h3 class="h5 mb-5">Experiência</h3>
+          <div class="col px-0 mb-4">
+          <p>Photoshop 90%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col px-0 mb-4">
+          <p>CapCut 90%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col px-0 mb-4">
+          <p>Canva 85%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col px-0 mb-4">
+          <p>Illustrator  75%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inicio Barbearia -->
+<div class="da-section bg-secondary text-white">
+  <div class="container">
+    <div class="row px-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
+          <div class="media-body">
+            <!--<div class="h5">300</div>-->
+            <div class="h1">Barbearia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container da-gallery" id="gallery">
+</br>
+  <div class="card-columns">
+    <div class="card"><a href="images/1 - barbearia.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/1 - barbearia.jpg" alt="Gallery Image 1" width="200" height="300"/></a></div>
+    <div class="card"><a href="images/2 - barbearia.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/2 - barbearia.jpg" alt="Gallery Image 2" width="200" height="300"/></a></div>
+    <div class="card"><a href="images/3 - barbearia.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/3 - barbearia.jpg" alt="Gallery Image 3" width="200" height="300"/></a></div>
+  </div>
+</div>
+<!-- Fim Barbearia -->
+<!-- Inicio Restaurante-->
+<div class="da-section bg-secondary text-white">
+  <div class="container">
+    <div class="row px-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
+          <div class="media-body">
+            <!--<div class="h5">300</div>-->
+            <div class="h1">Restaurante</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container da-gallery" id="gallery">
+</br>
+  <div class="card-columns">
+    <div class="card"><a href="images/1 - restaurante.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/1 - restaurante.jpg" alt="Gallery Image 1" width="250" height="300"/></a></div>
+    <div class="card"><a href="images/2 - restaurante.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/2 - restaurante.jpg" alt="Gallery Image 2" width="250" height="300"/></a></div>
+    <div class="card"><a href="images/3 - restaurante.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/3 - restaurante.jpg" alt="Gallery Image 3" width="250" height="300"/></a></div>
+  </div>
+</div>
+<!-- Fim Restaurante-->
+<!-- Inicio Drogaria -->
+<div class="da-section bg-secondary text-white">
+  <div class="container">
+    <div class="row px-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
+          <div class="media-body">
+            <!--<div class="h5">300</div>-->
+            <div class="h1">Drogaria</div>
+          </div>
+        </div>
+      </div>
+      <!--<div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-smile  fa-3x fa-fw"></i>
+          <div class="media-body">
+            <div class="h5">25</div>
+            <div class="h6">Clientes Atendidos</div>
+          </div>
+        </div>
+      </div>-->
+      <!--<div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clipboard-check  fa-3x fa-fw"></i>
+          <div class="media-body">
+            <div class="h5">225</div>
+            <div class="h6">Aprovação</div>
+          </div>
+        </div>
+      </div>-->
+      <!--<div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clock  fa-3x fa-fw"></i>
+          <div class="media-body">
+            <div class="h5">5010</div>
+            <div class="h6">Horas Trabalhadas</div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</div>
+<div class="container da-gallery" id="gallery">
+</br>
+  <div class="card-columns">
+    <div class="card"><a href="images/portfolio-1.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-1.jpg" alt="Gallery Image 1" width="250" height="300"/></a></div>
+    <div class="card"><a href="images/portfolio-2.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-2.jpg" alt="Gallery Image 2" width="250" height="300"/></a></div>
+    <div class="card"><a href="images/portfolio-3.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-3.jpg" alt="Gallery Image 3" width="250" height="300"/></a></div>
+    <div class="card"><a href="images/portfolio-4.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-4.jpg" alt="Gallery Image 4" width="250" height="300"/></a></div>
+    <div class="card"><a href="images/portfolio-5.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-5.jpg" alt="Gallery Image 5" width="250" height="300"/></a></div>
+  </div>
+</br>
+  <div class="h3 pb-5 text-center" data-aos="fade-up"> Vídeos</div>
+   <div class="card-columns">
+        <div class="card"><a href="https://www.youtube.com/watch?v=Lf8WHS784Us&ab_channel=FabiulaAlves" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-7.jpg" alt="Gallery Image 6"/></a></div>
+        <div class="card"><a href="https://www.youtube.com/watch?v=jXwz5PgUuIk&ab_channel=FabiulaAlves" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-8.jpg" alt="Gallery Image 7"/></a></div>
+        <div class="card"><a href="https://youtu.be/rXW3N0LDQv4" data-toggle="lightbox" data-gallery="da-gallery"><img class="img-fluid" src="images/portfolio-9.jpg" alt="Gallery Image 7"/></a></div>
+      </div>
+</div>
+<!-- Fim Drogaria -->
+    <footer class="bg-secondary da-section">
+      <div class="container text-white">
+        <div class="row justify-content-center">
+          Copyright &copy; Fabiula Alves.
+            
+        </div>
+      </div>
+    </footer>
+    <div id="scrolltop">
+      <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
+    </div>
+    <script src="scripts/jquery.min.js?ver=1.2.0"></script>
+    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="scripts/aos.js?ver=1.2.0"></script>
+    <script src="scripts/ekko-lightbox.min.js?ver=1.2.0"></script>
+    <script src="scripts/main.js?ver=1.2.0"></script>
+  </body>
+</html>
