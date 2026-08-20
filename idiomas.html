@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolha o idioma</title>
+
+  <!-- =====================================================
+       FONTES
+  ====================================================== -->
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="crossorigin"/>
+
+  <link rel="preload"
+        as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"/>
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+        media="print"
+        onload="this.media='all'"/>
+
+  <noscript>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"/>
+
+  </noscript>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: #151526;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: monospace, sans-serif;
+    }
+
+    .idiomas {
+      color: white;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .idiomas a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .idiomas a:hover {
+      opacity: 0.6;
+    }
+
+    .separador {
+      margin: 0 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="idiomas">
+    <a href="index.html">PT 🇧🇷</a>
+    <span class="separador">|</span>
+    <a href="index_en.html">EN 🇺🇸</a>
+  </div>
+
+</body>
+</html>

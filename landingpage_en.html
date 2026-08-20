@@ -1,0 +1,3866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Design, content, and communication for small businesses."
+  >
+
+  <title>
+    You take care of the business. I take care of the communication.
+  </title>
+
+
+  <style>
+
+    /* =====================================================
+       COLORS
+    ===================================================== */
+
+    :root {
+
+      --navy: #070743;
+      --teal: #169d99;
+      --lime: #b9cc01;
+      --yellow: #fae894;
+      --magenta: #ab0768;
+
+      --cream: #fffdf4;
+      --white: #ffffff;
+      --black: #151526;
+      --gray: #68687a;
+      --light-gray: #e8e8ee;
+
+      --radius: 24px;
+      --radius-small: 16px;
+
+      --shadow:
+        0 20px 60px rgba(7, 7, 67, .12);
+
+      --transition:
+        .3s ease;
+
+    }
+
+
+    /* =====================================================
+       RESET
+    ===================================================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        var(--cream);
+
+      color:
+        var(--black);
+
+      line-height:
+        1.5;
+
+      overflow-x:
+        hidden;
+
+    }
+
+
+    img {
+
+      width:
+        100%;
+
+      display:
+        block;
+
+    }
+
+
+    a {
+
+      color:
+        inherit;
+
+      text-decoration:
+        none;
+
+    }
+
+
+    button,
+    input,
+    textarea {
+
+      font:
+        inherit;
+
+    }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    header {
+
+      position:
+        fixed;
+
+      top:
+        0;
+
+      left:
+        0;
+
+      width:
+        100%;
+
+      z-index:
+        1000;
+
+      padding:
+        18px 5%;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    header.scrolled {
+
+      background:
+        rgba(7, 7, 67, .96);
+
+      backdrop-filter:
+        blur(14px);
+
+    }
+
+
+    nav {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+    }
+
+
+    .logo {
+
+      color:
+        var(--white);
+
+      font-size:
+        1.1rem;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        -.04em;
+
+    }
+
+
+    .nav-links {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        30px;
+
+      color:
+        white;
+
+      font-size:
+        .9rem;
+
+      font-weight:
+        700;
+
+    }
+
+
+    .nav-cta {
+
+      background:
+        var(--lime);
+
+      color:
+        var(--navy);
+
+      padding:
+        12px 20px;
+
+      border-radius:
+        999px;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .nav-cta:hover {
+
+      background:
+        var(--yellow);
+
+      transform:
+        translateY(-2px);
+
+    }
+
+
+    .menu-toggle {
+
+      display:
+        none;
+
+      border:
+        none;
+
+      background:
+        transparent;
+
+      color:
+        white;
+
+      font-size:
+        1.8rem;
+
+      cursor:
+        pointer;
+
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+
+      min-height:
+        100vh;
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1.05fr .95fr;
+
+      align-items:
+        center;
+
+      gap:
+        80px;
+
+      padding:
+        140px 5% 90px;
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+
+    }
+
+
+    .hero::before {
+
+      content:
+        "";
+
+      position:
+        absolute;
+
+      width:
+        500px;
+
+      height:
+        500px;
+
+      background:
+        var(--magenta);
+
+      border-radius:
+        50%;
+
+      filter:
+        blur(130px);
+
+      opacity:
+        .22;
+
+      right:
+        -200px;
+
+      top:
+        -180px;
+
+    }
+
+
+    .hero-content {
+
+      max-width:
+        850px;
+
+      position:
+        relative;
+
+      z-index:
+        2;
+
+    }
+
+
+    .eyebrow {
+
+      display:
+        inline-block;
+
+      color:
+        var(--yellow);
+
+      font-size:
+        .75rem;
+
+      font-weight:
+        900;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        .14em;
+
+      margin-bottom:
+        28px;
+
+    }
+
+
+    /*
+      IMPORTANT:
+
+      Phrases remain in the same title,
+      but each keeps its own color.
+
+      We do not use <br>.
+      The browser breaks lines naturally
+      based on the available width.
+    */
+
+    .hero-title {
+
+      font-size:
+        clamp(3.2rem, 7vw, 7rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.075em;
+
+      margin-bottom:
+        40px;
+
+      max-width:
+        900px;
+
+    }
+
+
+    .hero-title .title-blue {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .hero-title .title-teal {
+
+      color:
+        var(--teal);
+
+    }
+
+
+    /*
+      Spacing between the two phrases,
+      without forcing a new line.
+    */
+
+    .hero-title .title-part + .title-part {
+
+      margin-left:
+        .22em;
+
+    }
+
+
+    .hero-text {
+
+      max-width:
+        560px;
+
+      color:
+        rgba(255,255,255,.78);
+
+      font-size:
+        1.15rem;
+
+      line-height:
+        1.65;
+
+      margin-bottom:
+        38px;
+
+    }
+
+
+    .primary-btn {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      gap:
+        10px;
+
+      background:
+        var(--lime);
+
+      color:
+        var(--navy);
+
+      padding:
+        18px 25px;
+
+      border-radius:
+        999px;
+
+      font-weight:
+        900;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .primary-btn:hover {
+
+      background:
+        var(--yellow);
+
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        0 15px 35px
+        rgba(185,204,1,.25);
+
+    }
+
+
+    .hero-image {
+
+      position:
+        relative;
+
+      z-index:
+        2;
+
+    }
+
+
+    .hero-image img {
+
+      height:
+        650px;
+
+      object-fit:
+        cover;
+
+      border-radius:
+        var(--radius);
+
+      box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.35);
+
+    }
+
+
+    /* =====================================================
+       ANIMATION
+    ===================================================== */
+
+    .reveal {
+
+      opacity:
+        0;
+
+      transform:
+        translateY(30px);
+
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+    }
+
+
+    .reveal.visible {
+
+      opacity:
+        1;
+
+      transform:
+        translateY(0);
+
+    }
+
+
+    /* =====================================================
+       LABEL
+    ===================================================== */
+
+    .section-label {
+
+      color:
+        var(--magenta);
+
+      font-size:
+        .75rem;
+
+      font-weight:
+        900;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        .14em;
+
+      margin-bottom:
+        24px;
+
+    }
+
+
+    /* =====================================================
+       PAIN
+    ===================================================== */
+
+    .pain {
+
+      background:
+        var(--yellow);
+
+      padding:
+        130px 5% 120px;
+
+    }
+
+
+    .pain-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .pain h2 {
+
+      max-width:
+        850px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.3rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        65px;
+
+    }
+
+
+    .pain-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(5, 1fr);
+
+      gap:
+        12px;
+
+    }
+
+
+    .pain-card {
+
+      min-height:
+        210px;
+
+      background:
+        var(--cream);
+
+      padding:
+        25px;
+
+      border-radius:
+        var(--radius-small);
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .pain-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      background:
+        white;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .pain-card span {
+
+      font-size:
+        1.8rem;
+
+    }
+
+
+    .pain-card p {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.05rem;
+
+      font-weight:
+        800;
+
+      line-height:
+        1.15;
+
+    }
+
+
+    .pain-answer {
+
+      text-align:
+        center;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(1.8rem, 3vw, 3rem);
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        -.04em;
+
+      margin-top:
+        90px;
+
+      padding:
+        0 20px;
+
+    }
+
+
+    /* =====================================================
+       SOLUTION
+    ===================================================== */
+
+    .solution {
+
+      background:
+        var(--cream);
+
+      padding:
+        140px 5% 130px;
+
+    }
+
+
+    .solution-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        75px;
+
+      align-items:
+        center;
+
+    }
+
+
+    .solution h2 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        42px;
+
+    }
+
+
+    /*
+      Keeps different colors within the same title.
+    */
+
+    .solution-title .highlight {
+
+      color:
+        var(--teal);
+
+    }
+
+
+    .solution-intro {
+
+      max-width:
+        560px;
+
+      color:
+        var(--gray);
+
+      font-size:
+        1.1rem;
+
+      line-height:
+        1.7;
+
+    }
+
+
+    .solution-image {
+
+      position:
+        relative;
+
+    }
+
+
+    .solution-image img {
+
+      width:
+        100%;
+
+      height:
+        520px;
+
+      object-fit:
+        cover;
+
+      border-radius:
+        var(--radius);
+
+      box-shadow:
+        0 25px 60px
+        rgba(7,7,67,.15);
+
+    }
+
+
+    .image-caption {
+
+      position:
+        absolute;
+
+      left:
+        20px;
+
+      bottom:
+        20px;
+
+      max-width:
+        280px;
+
+      padding:
+        14px 18px;
+
+      border-radius:
+        12px;
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      font-size:
+        .85rem;
+
+      font-weight:
+        700;
+
+      line-height:
+        1.3;
+
+    }
+
+
+    .solution-list {
+
+      grid-column:
+        1 / -1;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap:
+        12px;
+
+    }
+
+
+    .solution-item {
+
+      padding:
+        22px 24px;
+
+      border-radius:
+        var(--radius-small);
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--light-gray);
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .solution-item:hover {
+
+      background:
+        var(--teal);
+
+      color:
+        white;
+
+      transform:
+        translateX(7px);
+
+    }
+
+
+    /* =====================================================
+       WHO IT'S FOR
+    ===================================================== */
+
+    .businesses {
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .businesses-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .businesses .section-label {
+
+      color:
+        var(--yellow);
+
+    }
+
+
+    /*
+      Each part keeps its color,
+      but there is NO <br>.
+    */
+
+    .businesses h2 {
+
+      max-width:
+        1000px;
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.2rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        48px;
+
+    }
+
+
+    .business-title-first {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .business-title-second {
+
+      color:
+        var(--lime);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .businesses-intro {
+
+      max-width:
+        720px;
+
+      color:
+        rgba(255,255,255,.72);
+
+      font-size:
+        1.1rem;
+
+      line-height:
+        1.7;
+
+      margin-bottom:
+        70px;
+
+    }
+
+
+    .business-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        15px;
+
+    }
+
+
+    .business-card {
+
+      min-height:
+        350px;
+
+      padding:
+        30px;
+
+      border-radius:
+        var(--radius);
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      overflow:
+        hidden;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .business-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      box-shadow:
+        0 25px 50px
+        rgba(0,0,0,.2);
+
+    }
+
+
+    .business-card:nth-child(1) {
+
+      background:
+        var(--teal);
+
+    }
+
+
+    .business-card:nth-child(2) {
+
+      background:
+        var(--magenta);
+
+    }
+
+
+    .business-card:nth-child(3) {
+
+      background:
+        var(--lime);
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .business-card:nth-child(4) {
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .business-icon {
+
+      font-size:
+        .85rem;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        .12em;
+
+      opacity:
+        .8;
+
+    }
+
+
+    .business-card h3 {
+
+      font-size:
+        1.9rem;
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.05em;
+
+      margin-bottom:
+        15px;
+
+    }
+
+
+    .business-card p {
+
+      margin:
+        0;
+
+      line-height:
+        1.5;
+
+      opacity:
+        .8;
+
+    }
+
+
+    /* =====================================================
+       FINAL PHRASE FOR WHO IT'S FOR
+    ===================================================== */
+
+    .businesses-bottom {
+
+      margin-top:
+        110px;
+
+      padding-top:
+        65px;
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.18);
+
+      text-align:
+        center;
+
+    }
+
+
+    .businesses-bottom strong {
+
+      display:
+        block;
+
+      color:
+        var(--yellow);
+
+      font-size:
+        clamp(1.8rem, 3vw, 2.7rem);
+
+      line-height:
+        1.05;
+
+    }
+
+
+    .businesses-bottom span {
+
+      display:
+        block;
+
+      max-width:
+        600px;
+
+      margin:
+        25px auto 0;
+
+      color:
+        rgba(255,255,255,.7);
+
+      font-size:
+        1.1rem;
+
+    }
+
+
+    /* =====================================================
+       RESULTS
+    ===================================================== */
+
+    .results {
+
+      background:
+        white;
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .results-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .results h2 {
+
+      max-width:
+        900px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        75px;
+
+    }
+
+
+    .result-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        25px;
+
+    }
+
+
+    .result {
+
+      padding:
+        30px 20px 20px 0;
+
+      border-top:
+        5px solid
+        var(--teal);
+
+    }
+
+
+    .result:nth-child(2) {
+
+      border-color:
+        var(--magenta);
+
+    }
+
+
+    .result:nth-child(3) {
+
+      border-color:
+        var(--lime);
+
+    }
+
+
+    .result:nth-child(4) {
+
+      border-color:
+        var(--yellow);
+
+    }
+
+
+    .result h3 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.6rem;
+
+      margin-bottom:
+        15px;
+
+    }
+
+
+    .result p {
+
+      color:
+        var(--gray);
+
+      line-height:
+        1.6;
+
+    }
+
+
+    /* =====================================================
+       PROCESS
+    ===================================================== */
+
+    .process {
+
+      background:
+        var(--teal);
+
+      color:
+        white;
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .process-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .process .section-label {
+
+      color:
+        var(--yellow);
+
+    }
+
+
+    .process h2 {
+
+      max-width:
+        1000px;
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        85px;
+
+    }
+
+
+    .process-title-one {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .process-title-two {
+
+      color:
+        var(--yellow);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .process-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        15px;
+
+    }
+
+
+    .step {
+
+      min-height:
+        300px;
+
+      background:
+        rgba(255,255,255,.11);
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
+      border-radius:
+        var(--radius);
+
+      padding:
+        30px;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .step:hover {
+
+      background:
+        rgba(255,255,255,.18);
+
+      transform:
+        translateY(-7px);
+
+    }
+
+
+    .step-number {
+
+      width:
+        48px;
+
+      height:
+        48px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      border-radius:
+        50%;
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+      font-size:
+        .85rem;
+
+      font-weight:
+        900;
+
+    }
+
+
+    .step-content {
+
+      margin-top:
+        40px;
+
+    }
+
+
+    .step h3 {
+
+      font-size:
+        1.55rem;
+
+      line-height:
+        1;
+
+      margin-bottom:
+        15px;
+
+    }
+
+
+    .step p {
+
+      color:
+        rgba(255,255,255,.72);
+
+      line-height:
+        1.55;
+
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .services {
+
+      background:
+        var(--cream);
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .services-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .services h2 {
+
+      max-width:
+        1000px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        75px;
+
+    }
+
+
+    .services-title-first {
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .services-title-second {
+
+      color:
+        var(--magenta);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .service-list {
+
+      border-top:
+        1px solid
+        #dddde5;
+
+    }
+
+
+    .service {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        70px 1fr 1fr;
+
+      gap:
+        25px;
+
+      align-items:
+        center;
+
+      padding:
+        30px 0;
+
+      border-bottom:
+        1px solid
+        #dddde5;
+
+    }
+
+
+    .service-number {
+
+      color:
+        var(--magenta);
+
+      font-weight:
+        900;
+
+    }
+
+
+    .service h3 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.35rem;
+
+    }
+
+
+    .service p {
+
+      color:
+        var(--gray);
+
+      line-height:
+        1.5;
+
+    }
+
+
+    /* =====================================================
+       PORTFOLIO
+    ===================================================== */
+
+    .portfolio {
+
+      background:
+        var(--yellow);
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .portfolio-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .portfolio h2 {
+
+      max-width:
+        1000px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .95;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        75px;
+
+    }
+
+
+    .portfolio-title-first {
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .portfolio-title-second {
+
+      color:
+        var(--magenta);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .portfolio-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap:
+        20px;
+
+    }
+
+
+    .portfolio-card {
+
+      background:
+        white;
+
+      border-radius:
+        var(--radius);
+
+      overflow:
+        hidden;
+
+      box-shadow:
+        0 15px 40px
+        rgba(7,7,67,.08);
+
+    }
+
+
+    .portfolio-card img {
+
+      height:
+        400px;
+
+      object-fit:
+        cover;
+
+    }
+
+
+    .portfolio-content {
+
+      padding:
+        28px;
+
+    }
+
+
+    .portfolio-content h3 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        1.6rem;
+
+      margin-bottom:
+        8px;
+
+    }
+
+
+    .portfolio-content p {
+
+      color:
+        var(--gray);
+
+    }
+
+
+    /* =====================================================
+       FINAL CTA
+    ===================================================== */
+
+    .final-cta {
+
+      background:
+        var(--magenta);
+
+      color:
+        white;
+
+      padding:
+        160px 5%;
+
+      text-align:
+        center;
+
+    }
+
+
+    .final-cta-inner {
+
+      max-width:
+        1050px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .final-cta h2 {
+
+      font-size:
+        clamp(3.2rem, 7vw, 7rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.075em;
+
+      margin-bottom:
+        45px;
+
+    }
+
+
+    .final-title-first {
+
+      color:
+        var(--white);
+
+    }
+
+
+    .final-title-second {
+
+      color:
+        var(--yellow);
+
+      margin-left:
+        .18em;
+
+    }
+
+
+    .final-cta p {
+
+      max-width:
+        650px;
+
+      margin:
+        0 auto 42px;
+
+      font-size:
+        1.15rem;
+
+      line-height:
+        1.65;
+
+      color:
+        rgba(255,255,255,.85);
+
+    }
+
+
+    .cta-button {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+      padding:
+        18px 30px;
+
+      border-radius:
+        999px;
+
+      font-weight:
+        900;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .cta-button:hover {
+
+      background:
+        white;
+
+      transform:
+        scale(1.04);
+
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact {
+
+      background:
+        var(--cream);
+
+      padding:
+        140px 5%;
+
+    }
+
+
+    .contact-inner {
+
+      max-width:
+        800px;
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .contact h2 {
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
+      line-height:
+        .92;
+
+      letter-spacing:
+        -.065em;
+
+      margin-bottom:
+        45px;
+
+    }
+
+
+    form {
+
+      display:
+        grid;
+
+      gap:
+        15px;
+
+    }
+
+
+    input,
+    textarea {
+
+      width:
+        100%;
+
+      padding:
+        17px;
+
+      border:
+        1px solid
+        #dddde5;
+
+      border-radius:
+        var(--radius-small);
+
+      background:
+        white;
+
+      outline:
+        none;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    input:focus,
+    textarea:focus {
+
+      border-color:
+        var(--teal);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(22,157,153,.1);
+
+    }
+
+
+    textarea {
+
+      min-height:
+        150px;
+
+      resize:
+        vertical;
+
+    }
+
+
+    .submit-btn {
+
+      border:
+        none;
+
+      cursor:
+        pointer;
+
+      padding:
+        18px;
+
+      border-radius:
+        999px;
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      font-weight:
+        900;
+
+      transition:
+        var(--transition);
+
+    }
+
+
+    .submit-btn:hover {
+
+      background:
+        var(--teal);
+
+    }
+
+
+    #form-message {
+
+      display:
+        none;
+
+      margin-top:
+        15px;
+
+      padding:
+        15px;
+
+      background:
+        var(--yellow);
+
+      color:
+        var(--navy);
+
+      border-radius:
+        var(--radius-small);
+
+      font-weight:
+        700;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer {
+
+      background:
+        var(--navy);
+
+      color:
+        white;
+
+      padding:
+        50px 5%;
+
+    }
+
+
+    .footer-inner {
+
+      max-width:
+        1200px;
+
+      margin:
+        0 auto;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        30px;
+
+    }
+
+
+    footer small {
+
+      color:
+        rgba(255,255,255,.5);
+
+    }
+
+
+    /* =====================================================
+       TABLET
+    ===================================================== */
+
+    @media (max-width: 1000px) {
+
+      .hero,
+      .solution-inner {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .hero-image img {
+
+        height:
+          520px;
+
+      }
+
+
+      .pain-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .business-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .result-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .process-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+    }
+
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
+
+    @media (max-width: 700px) {
+
+      header {
+
+        padding:
+          16px 5%;
+
+      }
+
+
+      .nav-links {
+
+        display:
+          none;
+
+        position:
+          absolute;
+
+        left:
+          5%;
+
+        right:
+          5%;
+
+        top:
+          70px;
+
+        padding:
+          25px;
+
+        background:
+          var(--navy);
+
+        border-radius:
+          var(--radius-small);
+
+        flex-direction:
+          column;
+
+        align-items:
+          stretch;
+
+      }
+
+
+      .nav-links.active {
+
+        display:
+          flex;
+
+      }
+
+
+      .menu-toggle {
+
+        display:
+          block;
+
+      }
+
+
+      /* HERO */
+
+      .hero {
+
+        grid-template-columns:
+          1fr;
+
+        padding:
+          120px 5% 70px;
+
+        gap:
+          55px;
+
+      }
+
+
+      .hero-title {
+
+        font-size:
+          3.5rem;
+
+      }
+
+
+      /*
+        On mobile, phrases can break naturally.
+        The spacing between colors remains small.
+      */
+
+      .hero-title .title-part + .title-part {
+
+        margin-left:
+          .12em;
+
+      }
+
+
+      .hero-image img {
+
+        height:
+          420px;
+
+      }
+
+
+      /* SECTIONS */
+
+      .pain,
+      .solution,
+      .businesses,
+      .results,
+      .process,
+      .services,
+      .portfolio,
+      .contact {
+
+        padding:
+          90px 5%;
+
+      }
+
+
+      /* PAIN */
+
+      .pain-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .pain-card {
+
+        min-height:
+          160px;
+
+      }
+
+
+      .pain-answer {
+
+        margin-top:
+          65px;
+
+      }
+
+
+      /* SOLUTION */
+
+      .solution-inner {
+
+        grid-template-columns:
+          1fr;
+
+        gap:
+          40px;
+
+      }
+
+
+      .solution-image img {
+
+        height:
+          420px;
+
+      }
+
+
+      .solution-list {
+
+        grid-column:
+          auto;
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      /* WHO IT'S FOR */
+
+      .business-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .business-card {
+
+        min-height:
+          280px;
+
+      }
+
+
+      .businesses-bottom {
+
+        margin-top:
+          75px;
+
+        padding-top:
+          45px;
+
+      }
+
+
+      .business-title-second,
+      .process-title-two,
+      .services-title-second,
+      .portfolio-title-second,
+      .final-title-second {
+
+        margin-left:
+          0;
+
+      }
+
+
+      /* RESULTS */
+
+      .result-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      /* PROCESS */
+
+      .process-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .step {
+
+        min-height:
+          250px;
+
+      }
+
+
+      .step-content {
+
+        margin-top:
+          25px;
+
+      }
+
+
+      /* SERVICES */
+
+      .service {
+
+        grid-template-columns:
+          50px 1fr;
+
+        gap:
+          15px;
+
+      }
+
+
+      .service p {
+
+        grid-column:
+          2;
+
+      }
+
+
+      /* PORTFOLIO */
+
+      .portfolio-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .portfolio-card img {
+
+        height:
+          300px;
+
+      }
+
+
+      /* CTA */
+
+      .final-cta {
+
+        padding:
+          110px 5%;
+
+      }
+
+
+      /* FOOTER */
+
+      .footer-inner {
+
+        flex-direction:
+          column;
+
+        align-items:
+          flex-start;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       HEADER
+  ===================================================== -->
+
+  <header id="header">
+
+    <nav>
+
+      <a
+        href="#"
+        class="logo"
+      >
+        Fabiula Alves
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+
+      <div
+        class="nav-links"
+        id="navLinks"
+      >
+
+        <a href="#solucao">
+          How I can help
+        </a>
+
+        <a href="#servicos">
+          Services
+        </a>
+
+        <a href="#projetos">
+          Projects
+        </a>
+
+        <a
+          href="#contato"
+          class="nav-cta"
+        >
+          Let's talk
+        </a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-content reveal">
+
+        <!--<span class="eyebrow">
+          Design + content for small businesses
+        </span>-->
+
+
+        <h1 class="hero-title">
+
+          <span class="title-part title-blue">
+            You take care of the business.
+          </span>
+
+          <span class="title-part title-teal">
+            <br>I take care of the communication.
+          </span>
+
+        </h1>
+
+
+        <p class="hero-text">
+
+          Content, design, and marketing for those who work
+          every day to make their own business happen.
+
+        </p>
+
+
+        <a
+          href="#contato"
+          class="primary-btn"
+        >
+          I want to organize my communication →
+        </a>
+
+      </div>
+
+
+      <div class="hero-image reveal">
+
+        <img
+          src="images/hero.png"
+          alt="Person working on their small business"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PAIN
+    ===================================================== -->
+
+    <section class="pain">
+
+      <div class="pain-inner">
+
+        <div class="section-label">
+          If you have a small business...
+        </div>
+
+
+        <h2 class="reveal">
+          Maybe you've already thought:
+        </h2>
+
+
+        <div class="pain-grid">
+
+
+          <article class="pain-card reveal">
+
+            <span>📱</span>
+
+            <p>
+              “I don't know what to post.”
+            </p>
+
+          </article>
+
+
+          <article class="pain-card reveal">
+
+            <span>😩</span>
+
+            <p>
+              “I post, but hardly anyone reaches out.”
+            </p>
+
+          </article>
+
+
+          <article class="pain-card reveal">
+
+            <span>⏰</span>
+
+            <p>
+              “I don't have time to manage Instagram.”
+            </p>
+
+          </article>
+
+
+          <article class="pain-card reveal">
+
+            <span>📣</span>
+
+            <p>
+              “I have a promotion, but I don't know how to promote it.”
+            </p>
+
+          </article>
+
+
+          <article class="pain-card reveal">
+
+            <span>💭</span>
+
+            <p>
+              “My business is good, but my profile doesn't show it.”
+            </p>
+
+          </article>
+
+
+        </div>
+
+
+        <p class="pain-answer reveal">
+          You don't have to do everything alone.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SOLUTION
+    ===================================================== -->
+
+    <section
+      class="solution"
+      id="solucao"
+    >
+
+      <div class="solution-inner">
+
+
+        <div class="solution-content reveal">
+
+          <div class="section-label">
+            The solution
+          </div>
+
+
+          <h2 class="solution-title">
+
+            I transform what you already do
+            <span class="highlight">
+              into content.
+            </span>
+
+          </h2>
+
+
+          <p class="solution-intro">
+
+            You tell me what you sell, who you sell to, and
+            what you want to promote. I help turn that
+            into clear, beautiful, and useful communication for
+            your customer.
+
+          </p>
+
+        </div>
+
+
+        <div class="solution-image reveal">
+
+          <img
+            src="images/solucao.png"
+            alt="Small business owner creating content to promote her business"
+          >
+
+
+          <div class="image-caption">
+
+            From a real business to communication that connects.
+
+          </div>
+
+        </div>
+
+
+        <div class="solution-list">
+
+
+          <div class="solution-item reveal">
+
+            <strong>
+              📱 Posts and carousels
+            </strong>
+
+            <span>→</span>
+
+          </div>
+
+
+          <div class="solution-item reveal">
+
+            <strong>
+              🎬 Reels and stories
+            </strong>
+
+            <span>→</span>
+
+          </div>
+
+
+          <div class="solution-item reveal">
+
+            <strong>
+              📣 Promotions and campaigns
+            </strong>
+
+            <span>→</span>
+
+          </div>
+
+
+          <div class="solution-item reveal">
+
+            <strong>
+              🖨️ Print and indoor materials
+            </strong>
+
+            <span>→</span>
+
+          </div>
+
+
+          <div class="solution-item reveal">
+
+            <strong>
+              💬 WhatsApp materials
+            </strong>
+
+            <span>→</span>
+
+          </div>
+
+
+          <div class="solution-item reveal">
+
+            <strong>
+              🖥️ Landing pages
+            </strong>
+
+            <span>→</span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHO IT'S FOR
+    ===================================================== -->
+
+    <section
+      class="businesses"
+      id="para-quem"
+    >
+
+      <div class="businesses-inner">
+
+        <div class="section-label">
+          For small businesses
+        </div>
+
+
+        <h2 class="reveal">
+
+          <span class="business-title-first">
+            Your business is unique.
+          </span>
+
+          <span class="business-title-second">
+            Your communication should be too.
+          </span>
+
+        </h2>
+
+
+        <p class="businesses-intro reveal">
+
+          Every business has a routine, an audience, and a way
+          of selling. The goal is to understand that reality and
+          transform what you already do into clear,
+          consistent communication that feels close to people.
+
+        </p>
+
+
+        <div class="business-grid">
+
+
+          <article class="business-card reveal">
+
+            <div class="business-icon">
+              01
+            </div>
+
+            <div>
+
+              <h3>
+                Local commerce
+              </h3>
+
+              <p>
+                Products, offers, news, and campaigns
+                to bring your business closer to customers.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="business-card reveal">
+
+            <div class="business-icon">
+              02
+            </div>
+
+            <div>
+
+              <h3>
+                Services
+              </h3>
+
+              <p>
+                Content that showcases your work,
+                builds trust, and makes contact easier.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="business-card reveal">
+
+            <div class="business-icon">
+              03
+            </div>
+
+            <div>
+
+              <h3>
+                Handcrafted products
+              </h3>
+
+              <p>
+                Design and content to highlight processes,
+                stories, details, and value.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="business-card reveal">
+
+            <div class="business-icon">
+              04
+            </div>
+
+            <div>
+
+              <h3>
+                Small businesses
+              </h3>
+
+              <p>
+                Communication designed for the reality
+                of those who wear many hats and can't stop.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+
+        <div class="businesses-bottom reveal">
+
+          <strong>
+            No matter the size of the business.
+          </strong>
+
+          <span>
+            What matters is finding the best way to tell
+            what you do.
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESULTS
+    ===================================================== -->
+
+    <section class="results">
+
+      <div class="results-inner">
+
+        <div class="section-label">
+          What communication needs to do
+        </div>
+
+
+        <h2 class="reveal">
+          You don't need just another pretty post.
+        </h2>
+
+
+        <div class="result-grid">
+
+
+          <article class="result reveal">
+
+            <h3>
+              Grab attention
+            </h3>
+
+            <p>
+              Make your business stand out
+              amid so much information.
+            </p>
+
+          </article>
+
+
+          <article class="result reveal">
+
+            <h3>
+              Explain
+            </h3>
+
+            <p>
+              Show what you offer
+              and why it matters.
+            </p>
+
+          </article>
+
+
+          <article class="result reveal">
+
+            <h3>
+              Invite
+            </h3>
+
+            <p>
+              Guide the customer to WhatsApp,
+              the store, booking, or purchase.
+            </p>
+
+          </article>
+
+
+          <article class="result reveal">
+
+            <h3>
+              Be remembered
+            </h3>
+
+            <p>
+              Create a presence that stays
+              in the customer's mind.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCESS
+    ===================================================== -->
+
+    <section
+      class="process"
+      id="processo"
+    >
+
+      <div class="process-inner">
+
+        <div class="section-label">
+          How it works
+        </div>
+
+
+        <h2 class="reveal">
+
+          <span class="process-title-one">
+            Simple for you.
+          </span>
+
+          <span class="process-title-two">
+            Strategic in the process.
+          </span>
+
+        </h2>
+
+
+        <div class="process-grid">
+
+
+          <article class="step reveal">
+
+            <div class="step-number">
+              01
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                You tell me
+              </h3>
+
+              <p>
+                What you do, sell, and want to promote.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="step reveal">
+
+            <div class="step-number">
+              02
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                I organize
+              </h3>
+
+              <p>
+                I turn your ideas
+                into content and visual assets.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="step reveal">
+
+            <div class="step-number">
+              03
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                We publish
+              </h3>
+
+              <p>
+                You receive ready-to-use
+                materials.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="step reveal">
+
+            <div class="step-number">
+              04
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                You run your business
+              </h3>
+
+              <p>
+                While the communication
+                keeps working for you.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+    ===================================================== -->
+
+    <section
+      class="services"
+      id="servicos"
+    >
+
+      <div class="services-inner">
+
+        <div class="section-label">
+          What I can do
+        </div>
+
+
+        <h2 class="reveal">
+
+          <span class="services-title-first">
+            Communication for the day-to-day
+          </span>
+
+          <span class="services-title-second">
+            of your business.
+          </span>
+
+        </h2>
+
+
+        <div class="service-list">
+
+
+          <div class="service reveal">
+
+            <span class="service-number">
+              01
+            </span>
+
+            <h3>
+              Social media
+            </h3>
+
+            <p>
+              Posts, carousels, stories,
+              reels, and assets for Instagram.
+            </p>
+
+          </div>
+
+
+          <div class="service reveal">
+
+            <span class="service-number">
+              02
+            </span>
+
+            <h3>
+              Promotions
+            </h3>
+
+            <p>
+              Campaigns, offers, launches,
+              and special dates.
+            </p>
+
+          </div>
+
+
+          <div class="service reveal">
+
+            <span class="service-number">
+              03
+            </span>
+
+            <h3>
+              Design
+            </h3>
+
+            <p>
+              Digital graphics, printed materials,
+              menus, and indoor signage.
+            </p>
+
+          </div>
+
+
+          <div class="service reveal">
+
+            <span class="service-number">
+              04
+            </span>
+
+            <h3>
+              Content
+            </h3>
+
+            <p>
+              Planning and production of content
+              for different channels.
+            </p>
+
+          </div>
+
+
+          <div class="service reveal">
+
+            <span class="service-number">
+              05
+            </span>
+
+            <h3>
+              WhatsApp
+            </h3>
+
+            <p>
+              Materials to showcase products,
+              services, and offers.
+            </p>
+
+          </div>
+
+
+          <div class="service reveal">
+
+            <span class="service-number">
+              06
+            </span>
+
+            <h3>
+              Landing pages
+            </h3>
+
+            <p>
+              Pages to present services,
+              products, and campaigns.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PORTFOLIO
+    ===================================================== -->
+
+    <section
+      class="portfolio"
+      id="projetos"
+    >
+
+      <div class="portfolio-inner">
+
+        <div class="section-label">
+          Projects
+        </div>
+
+
+        <h2 class="reveal">
+
+          <span class="portfolio-title-first">
+            Some projects that took shape
+          </span>
+
+          <span class="portfolio-title-second">
+            through design.
+          </span>
+
+        </h2>
+
+
+        <div class="portfolio-grid">
+
+
+          <article class="portfolio-card reveal">
+
+            <img
+              src="images/artesanato.png"
+              alt="Campaign highlighting local craftsmanship"
+            >
+
+            <div class="portfolio-content">
+
+              <h3>
+                Local craftsmanship
+              </h3>
+
+              <p>
+                Campaign to showcase products,
+                artisans, and local production.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="portfolio-card reveal">
+
+            <img
+              src="images/drogaria.png"
+              alt="Communication project for a drugstore"
+            >
+
+            <div class="portfolio-content">
+
+              <h3>
+                Drugstore
+              </h3>
+
+              <p>
+                Commercial communication to
+                promote products and offers.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL CTA
+    ===================================================== -->
+
+    <section class="final-cta">
+
+      <div class="final-cta-inner reveal">
+
+
+        <h2>
+
+          <span class="final-title-first">
+            Your business has something to say.
+          </span>
+
+          <span class="final-title-second">
+            Let's show it.
+          </span>
+
+        </h2>
+
+
+        <p>
+
+          Let's transform what you do every day
+          into communication that your customers understand,
+          remember, and want to engage with.
+
+        </p>
+
+
+        <a
+          href="#contato"
+          class="cta-button"
+        >
+          I WANT TO STRENGTHEN MY BUSINESS →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ===================================================== -->
+
+    <section
+      class="contact"
+      id="contato"
+    >
+
+      <div class="contact-inner">
+
+        <div class="section-label">
+          Let's talk
+        </div>
+
+
+        <h2>
+          Tell me what you need.
+        </h2>
+
+
+        <form id="contactForm">
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          >
+
+
+          <input
+            type="text"
+            name="business"
+            placeholder="Your business name"
+            required
+          >
+
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+          >
+
+
+          <textarea
+            name="message"
+            placeholder="What would you like to promote or improve?"
+            required
+          ></textarea>
+
+
+          <button
+            type="submit"
+            class="submit-btn"
+          >
+            I WANT TO TALK →
+          </button>
+
+        </form>
+
+
+        <div id="form-message">
+          Thank you! Your message has been received.
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <strong>
+        Fabiula Alves © 2026
+      </strong>
+
+      <small>
+        Design · Content · Communication
+      </small>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    const header =
+      document.getElementById("header");
+
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        if (window.scrollY > 50) {
+
+          header.classList.add("scrolled");
+
+        } else {
+
+          header.classList.remove("scrolled");
+
+        }
+
+      }
+    );
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+
+    menuToggle.addEventListener(
+      "click",
+      () => {
+
+        const isOpen =
+          navLinks.classList.toggle("active");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          isOpen
+        );
+
+      }
+    );
+
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(
+        link => {
+
+          link.addEventListener(
+            "click",
+            () => {
+
+              navLinks.classList.remove("active");
+
+              menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+
+            }
+          );
+
+        }
+      );
+
+
+    /* =====================================================
+       ANIMATION
+    ===================================================== */
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+
+    const observer =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(
+            entry => {
+
+              if (
+                entry.isIntersecting
+              ) {
+
+                entry.target.classList.add(
+                  "visible"
+                );
+
+                observer.unobserve(
+                  entry.target
+                );
+
+              }
+
+            }
+          );
+
+        },
+        {
+          threshold:
+            .12
+        }
+      );
+
+
+    revealElements.forEach(
+      element => {
+
+        observer.observe(element);
+
+      }
+    );
+
+
+    /* =====================================================
+       FORM
+    ===================================================== */
+
+    const form =
+      document.getElementById("contactForm");
+
+
+    const formMessage =
+      document.getElementById("form-message");
+
+
+    form.addEventListener(
+      "submit",
+      event => {
+
+        event.preventDefault();
+
+        formMessage.style.display =
+          "block";
+
+        form.reset();
+
+        setTimeout(
+          () => {
+
+            formMessage.style.display =
+              "none";
+
+          },
+          5000
+        );
+
+      }
+    );
+
+
+  </script>
+
+</body>
+
+</html>

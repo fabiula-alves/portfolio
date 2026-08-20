@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Portfólio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #8989F6;
+        }
+
+        .intro {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            background: #8989F6;
+        }
+
+        /* VÍDEO */
+        .intro video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            width: 100%;
+            height: 100%;
+
+            transform: translate(-50%, -50%);
+
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        /* BOTÃO */
+        .botao-container {
+            position: absolute;
+
+            left: 50%;
+            bottom: 8%;
+
+            transform: translateX(-50%) translateY(20px);
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition:
+                opacity 1s ease,
+                transform 1s ease;
+
+            z-index: 10;
+        }
+
+        .botao-container.mostrar {
+            opacity: 1;
+            visibility: visible;
+
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .botao {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 15px 35px;
+
+            background: #fff;
+            color: #111;
+
+            text-decoration: none;
+
+            font-size: clamp(15px, 2vw, 18px);
+            font-weight: bold;
+
+            border-radius: 50px;
+
+            white-space: nowrap;
+
+            transition: 0.3s ease;
+        }
+
+        .botao:hover {
+            background: #111;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* =========================
+           CELULAR
+        ========================= */
+        @media (max-width: 600px) {
+
+            .intro video {
+                /*
+                 * Mostra o vídeo inteiro no celular.
+                 * Pode deixar barras nas laterais ou
+                 * em cima/baixo dependendo da proporção.
+                 */
+                object-fit: contain;
+            }
+
+            .botao-container {
+                bottom: 6%;
+            }
+
+            .botao {
+                padding: 14px 30px;
+                font-size: 16px;
+            }
+        }
+
+        /* CELULAR EM PÉ */
+        @media (max-width: 600px) and (orientation: portrait) {
+
+            .intro video {
+                width: 100%;
+                height: 100%;
+
+                object-fit: contain;
+            }
+        }
+
+        /* CELULAR DEITADO */
+        @media (max-width: 900px) and (orientation: landscape) {
+
+            .intro video {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="intro">
+
+        <video autoplay muted playsinline>
+            <source src="images/loading.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+        <div class="botao-container" id="botao">
+            <a href="index_en.html" class="botao">
+                Portfolio
+            </a>
+        </div>
+
+    </main>
+
+    <script>
+        setTimeout(() => {
+            document
+                .getElementById("botao")
+                .classList.add("mostrar");
+        }, 10000);
+    </script>
+
+</body>
+</html>
